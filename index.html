@@ -656,11 +656,40 @@
   revealEls.forEach(el => io.observe(el));
 
   // Booking form (front-end only demo — wire to a real backend/email service before launch)
-  function handleBookingSubmit(e) {
-    e.preventDefault();
-    document.getElementById('form-success').classList.add('show');
-    e.target.reset();
-    return false;
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby5soknOhq895SzFZzmEbNVLmtFX3KRht025A97BrmY5ejWu97lvVvAI-QPrApNsR3BRA/exec";
+
+async function handleBookingSubmit(e) {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const data = {
+    name: form.name.value,
+    phone: form.phone.value,
+    service: form.service.value,
+    date: form.date.value,
+    notes: form.notes.value
+  };
+
+  try {
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      body: JSON.stringify(data)
+    });
+
+    document
+      .getElementById("form-success")
+      .classList.add("show");
+
+    form.reset();
+
+  } catch (error) {
+    console.error(error);
+    alert("Could not send the appointment request.");
+  }
+
+  return false;
+}
   }
 </script>
 
