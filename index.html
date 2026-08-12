@@ -291,9 +291,12 @@
     transition: background 0.25s ease; font-family: var(--font-body);
   }
   .form-submit:hover { background: var(--gold-bright); }
+  .form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
 
   .form-success { display: none; margin-top: 16px; font-size: 14px; color: var(--gold-bright); font-family: var(--font-mono); }
   .form-success.show { display: block; }
+  .form-error { display: none; margin-top: 16px; font-size: 14px; color: #E8A5A5; font-family: var(--font-mono); }
+  .form-error.show { display: block; }
 
   footer {
     padding: 44px 32px; border-top: 1px solid var(--line);
@@ -486,8 +489,9 @@
           <label for="notes" data-i18n="form_notes_label">Notes (optional)</label>
           <textarea id="notes" name="notes" data-i18n-placeholder="form_notes_placeholder" placeholder="Anything we should know before your visit"></textarea>
         </div>
-        <button type="submit" class="form-submit" data-i18n="form_submit">Request appointment</button>
+        <button type="submit" class="form-submit" id="form-submit-btn" data-i18n="form_submit">Request appointment</button>
         <div class="form-success" id="form-success" data-i18n="form_success">✓ Request received — we'll confirm by phone shortly.</div>
+        <div class="form-error" id="form-error">Something went wrong — please call us instead, or try again.</div>
       </form>
     </div>
   </div>
@@ -655,41 +659,56 @@
   }, { threshold: 0.15 });
   revealEls.forEach(el => io.observe(el));
 
-  // Booking form (front-end only demo — wire to a real backend/email service before launch)
+  // ---------- Booking form -> Google Apps Script ----------
+  // Replace with YOUR deployed Web App URL (Deploy > New deployment > Web app).
   const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby5soknOhq895SzFZzmEbNVLmtFX3KRht025A97BrmY5ejWu97lvVvAI-QPrApNsR3BRA/exec";
 
-async function handleBookingSubmit(e) {
-  e.preventDefault();
+  async function handleBookingSubmit(e) {
+    e.preventDefault();
 
-  const form = e.target;
+    const form = e.target;
+    const submitBtn = document.getElementById('form-submit-btn');
+    const successEl = document.getElementById('form-success');
+    const errorEl = document.getElementById('form-error');
 
-  const data = {
-    name: form.name.value,
-    phone: form.phone.value,
-    service: form.service.value,
-    date: form.date.value,
-    notes: form.notes.value
-  };
+    successEl.classList.remove('show');
+    errorEl.classList.remove('show');
 
-  try {
-    await fetch(SCRIPT_URL, {
-      method: "POST",
-      body: JSON.stringify(data)
-    });
+    const data = {
+      name: form.name.value,
+      phone: form.phone.value,
+      service: form.service.value,
+      date: form.date.value,
+      notes: form.notes.value
+    };
 
-    document
-      .getElementById("form-success")
-      .classList.add("show");
+    submitBtn.disabled = true;
 
-    form.reset();
+    try {
+      // IMPORTANT: Apps Script Web Apps don't send CORS headers back,
+      // so a normal fetch() gets blocked by the browser before it can
+      // read the response. "no-cors" lets the request go through --
+      // we just can't read anything back from it, so we assume success
+      // once the request doesn't throw.
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8" // avoids a CORS preflight
+        },
+        body: JSON.stringify(data)
+      });
 
-  } catch (error) {
-    console.error(error);
-    alert("Could not send the appointment request.");
-  }
+      successEl.classList.add('show');
+      form.reset();
+    } catch (error) {
+      console.error(error);
+      errorEl.classList.add('show');
+    } finally {
+      submitBtn.disabled = false;
+    }
 
-  return false;
-}
+    return false;
   }
 </script>
 
