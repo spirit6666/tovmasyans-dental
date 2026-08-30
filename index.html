@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" id="html-root">
+<html lang="hy" id="html-root">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tovmasyan Dental Clinic — Armavir</title>
-<meta name="description" content="Private dental practice in Armavir, Armenia. Preventive care, restorative work, cosmetic dentistry, implants, orthodontics, and same-day emergency visits.">
+
+<title>Tovmasyan Dental Clinic — Արմավիր</title>
+
+<meta name="description" content="Թովմասյան ատամնաբուժական կլինիկա՝ Արմավիրում։ Ժամանակակից ստոմատոլոգիա, կանխարգելիչ և վերականգնողական բուժում, իմպլանտացիա, օրթոդոնտիա և էսթետիկ ստոմատոլոգիա։">
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230E3B36' d='M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z'/%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --porcelain: #FAF7F2;
@@ -27,8 +32,15 @@
     --font-mono: 'JetBrains Mono', 'Noto Sans Armenian', monospace;
   }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     background: var(--porcelain);
@@ -38,11 +50,26 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  a { color: inherit; text-decoration: none; }
-  img, svg { display: block; max-width: 100%; }
-  button { font: inherit; }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  button {
+    font: inherit;
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
 
   .eyebrow {
     font-family: var(--font-mono);
@@ -53,19 +80,33 @@
     font-weight: 500;
   }
 
-  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
     outline: 2px solid var(--gold);
     outline-offset: 3px;
   }
 
   .skip-link {
-    position: absolute; left: -9999px; top: 0; z-index: 100;
-    background: var(--teal-deep); color: var(--porcelain);
-    padding: 12px 20px; border-radius: 0 0 4px 0; font-size: 14px;
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    background: var(--teal-deep);
+    color: var(--porcelain);
+    padding: 12px 20px;
+    border-radius: 0 0 4px 0;
+    font-size: 14px;
   }
-  .skip-link:focus { left: 0; }
 
-  /* ---------- Nav ---------- */
+  .skip-link:focus {
+    left: 0;
+  }
+
+  /* ---------- Navigation ---------- */
+
   header.site-nav {
     position: sticky;
     top: 0;
@@ -86,29 +127,68 @@
   }
 
   .brand {
-    display: flex; align-items: center; gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--font-display);
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.01em;
     white-space: nowrap;
   }
-  .brand .mark { width: 22px; height: 22px; flex: none; }
-  .brand .mark path { stroke: var(--teal-deep); fill: none; stroke-width: 1.3; }
-  .brand span.dot { color: var(--gold); }
 
-  nav.links { display: flex; gap: 32px; font-size: 14.5px; font-weight: 500; }
-  nav.links a { position: relative; padding-bottom: 4px; white-space: nowrap; }
+  .brand .mark {
+    width: 22px;
+    height: 22px;
+    flex: none;
+  }
+
+  .brand .mark path {
+    stroke: var(--teal-deep);
+    fill: none;
+    stroke-width: 1.3;
+  }
+
+  .brand span.dot {
+    color: var(--gold);
+  }
+
+  nav.links {
+    display: flex;
+    gap: 32px;
+    font-size: 14.5px;
+    font-weight: 500;
+  }
+
+  nav.links a {
+    position: relative;
+    padding-bottom: 4px;
+    white-space: nowrap;
+  }
+
   nav.links a::after {
     content: '';
-    position: absolute; left: 0; right: 0; bottom: -2px;
-    height: 1.5px; background: var(--gold);
-    transform: scaleX(0); transform-origin: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 1.5px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
     transition: transform 0.3s ease;
   }
-  nav.links a:hover::after, nav.links a:focus-visible::after { transform: scaleX(1); }
 
-  .nav-right { display: flex; align-items: center; gap: 14px; }
+  nav.links a:hover::after,
+  nav.links a:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
 
   .lang-switch {
     display: flex;
@@ -116,6 +196,7 @@
     border-radius: 4px;
     overflow: hidden;
   }
+
   .lang-switch button {
     background: transparent;
     border: none;
@@ -127,9 +208,19 @@
     color: var(--ink);
     transition: background 0.2s ease, color 0.2s ease;
   }
-  .lang-switch button + button { border-left: 1px solid var(--line); }
-  .lang-switch button[aria-pressed="true"] { background: var(--teal-deep); color: var(--porcelain); }
-  .lang-switch button:hover:not([aria-pressed="true"]) { background: var(--porcelain-dim); }
+
+  .lang-switch button + button {
+    border-left: 1px solid var(--line);
+  }
+
+  .lang-switch button[aria-pressed="true"] {
+    background: var(--teal-deep);
+    color: var(--porcelain);
+  }
+
+  .lang-switch button:hover:not([aria-pressed="true"]) {
+    background: var(--porcelain-dim);
+  }
 
   .nav-cta {
     background: var(--teal-deep);
@@ -141,20 +232,42 @@
     transition: background 0.25s ease;
     white-space: nowrap;
   }
-  .nav-cta:hover { background: var(--teal-mid); }
+
+  .nav-cta:hover {
+    background: var(--teal-mid);
+  }
 
   .menu-toggle {
     display: none;
-    background: none; border: 1px solid var(--line); border-radius: 4px;
-    width: 40px; height: 40px; cursor: pointer;
-    align-items: center; justify-content: center;
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
-  .menu-toggle svg { width: 18px; height: 18px; }
-  .menu-toggle svg path { stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; }
+
+  .menu-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .menu-toggle svg path {
+    stroke: var(--ink);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+  }
 
   @media (max-width: 940px) {
-    nav.links { display: none; }
-    .menu-toggle { display: flex; }
+    nav.links {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
   }
 
   .mobile-menu {
@@ -164,14 +277,24 @@
     background: var(--porcelain);
     padding: 8px 32px 20px;
   }
-  .mobile-menu.open { display: flex; }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
   .mobile-menu a {
-    padding: 13px 0; font-size: 15.5px; font-weight: 500;
+    padding: 13px 0;
+    font-size: 15.5px;
+    font-weight: 500;
     border-bottom: 1px solid var(--line);
   }
-  .mobile-menu a:last-of-type { border-bottom: none; }
+
+  .mobile-menu a:last-of-type {
+    border-bottom: none;
+  }
 
   /* ---------- Hero ---------- */
+
   .hero {
     background: var(--teal-deep);
     color: var(--porcelain);
@@ -179,12 +302,21 @@
     position: relative;
     overflow: hidden;
   }
+
   .hero-inner {
-    max-width: 1180px; margin: 0 auto;
-    display: grid; grid-template-columns: 1.15fr 0.85fr;
-    gap: 56px; align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+    align-items: center;
   }
-  @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; } }
+
+  @media (max-width: 900px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+    }
+  }
 
   .hero h1 {
     font-family: var(--font-display);
@@ -194,7 +326,12 @@
     margin: 16px 0 22px;
     letter-spacing: -0.01em;
   }
-  .hero h1 em { font-style: italic; color: var(--gold-bright); font-weight: 400; }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-bright);
+    font-weight: 400;
+  }
 
   .hero p.lede {
     font-size: 17px;
@@ -203,46 +340,141 @@
     margin-bottom: 32px;
   }
 
-  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
 
   .btn-primary {
-    background: var(--gold); color: var(--teal-deep);
-    padding: 14px 28px; border-radius: 3px;
-    font-weight: 600; font-size: 14.5px;
-    display: inline-block; border: none; cursor: pointer;
+    background: var(--gold);
+    color: var(--teal-deep);
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14.5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
     transition: background 0.25s ease, transform 0.25s ease;
   }
-  .btn-primary:hover { background: var(--gold-bright); transform: translateY(-1px); }
+
+  .btn-primary:hover {
+    background: var(--gold-bright);
+    transform: translateY(-1px);
+  }
 
   .btn-ghost {
-    border: 1px solid var(--line-dark); color: var(--porcelain);
-    padding: 14px 28px; border-radius: 3px;
-    font-weight: 500; font-size: 14.5px;
+    border: 1px solid var(--line-dark);
+    color: var(--porcelain);
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14.5px;
     transition: border-color 0.25s ease, background 0.25s ease;
   }
-  .btn-ghost:hover { border-color: var(--gold); background: rgba(215,178,108,0.08); }
 
-  /* Signature: molar cross-section line drawing */
-  .molar-wrap { display: flex; justify-content: center; align-items: center; }
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    background: rgba(215,178,108,0.08);
+  }
+
+  /* ---------- Molar ---------- */
+
+  .molar-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .molar-svg .draw {
-    fill: none; stroke: var(--gold); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round;
-  }
-  .molar-svg .draw-outline { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 2.4s cubic-bezier(0.65,0,0.35,1) 0.2s forwards; }
-  .molar-svg .draw-root { stroke-dasharray: 260; stroke-dashoffset: 260; animation: draw 1.4s cubic-bezier(0.65,0,0.35,1) 1.6s forwards; opacity: 0.85; }
-  .molar-svg .fill-pulp { fill: var(--gold-bright); opacity: 0; animation: fade-in 0.6s ease 2.6s forwards; }
-  .molar-svg .label-line { stroke: rgba(250,247,242,0.3); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0; animation: fade-in 0.6s ease 2.8s forwards; }
-  .molar-svg text { font-family: var(--font-mono); font-size: 9.5px; fill: rgba(250,247,242,0.45); letter-spacing: 0.04em; opacity: 0; animation: fade-in 0.6s ease 2.9s forwards; }
-  @keyframes draw { to { stroke-dashoffset: 0; } }
-  @keyframes fade-in { to { opacity: 1; } }
-  @media (prefers-reduced-motion: reduce) {
-    .molar-svg .draw-outline, .molar-svg .draw-root, .molar-svg .fill-pulp, .molar-svg .label-line, .molar-svg text { animation: none; }
-    .molar-svg .draw-outline, .molar-svg .draw-root { stroke-dashoffset: 0; }
-    .molar-svg .fill-pulp, .molar-svg .label-line, .molar-svg text { opacity: 1; }
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
-  /* ---------- Section shell ---------- */
-  section { padding: 96px 32px; }
-  .section-head { max-width: 640px; margin-bottom: 52px; }
+  .molar-svg .draw-outline {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: draw 2.4s cubic-bezier(0.65,0,0.35,1) 0.2s forwards;
+  }
+
+  .molar-svg .draw-root {
+    stroke-dasharray: 260;
+    stroke-dashoffset: 260;
+    animation: draw 1.4s cubic-bezier(0.65,0,0.35,1) 1.6s forwards;
+    opacity: 0.85;
+  }
+
+  .molar-svg .fill-pulp {
+    fill: var(--gold-bright);
+    opacity: 0;
+    animation: fade-in 0.6s ease 2.6s forwards;
+  }
+
+  .molar-svg .label-line {
+    stroke: rgba(250,247,242,0.3);
+    stroke-width: 1;
+    stroke-dasharray: 3 3;
+    opacity: 0;
+    animation: fade-in 0.6s ease 2.8s forwards;
+  }
+
+  .molar-svg text {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    fill: rgba(250,247,242,0.45);
+    letter-spacing: 0.04em;
+    opacity: 0;
+    animation: fade-in 0.6s ease 2.9s forwards;
+  }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .molar-svg .draw-outline,
+    .molar-svg .draw-root,
+    .molar-svg .fill-pulp,
+    .molar-svg .label-line,
+    .molar-svg text {
+      animation: none;
+    }
+
+    .molar-svg .draw-outline,
+    .molar-svg .draw-root {
+      stroke-dashoffset: 0;
+    }
+
+    .molar-svg .fill-pulp,
+    .molar-svg .label-line,
+    .molar-svg text {
+      opacity: 1;
+    }
+  }
+
+  /* ---------- Sections ---------- */
+
+  section {
+    padding: 96px 32px;
+  }
+
+  .section-head {
+    max-width: 640px;
+    margin-bottom: 52px;
+  }
+
   .section-head h2 {
     font-family: var(--font-display);
     font-weight: 400;
@@ -250,651 +482,2153 @@
     margin-top: 14px;
     letter-spacing: -0.01em;
   }
-  .section-head p { color: #55645D; margin-top: 16px; font-size: 15.5px; max-width: 52ch; }
+
+  .section-head p {
+    color: #55645D;
+    margin-top: 16px;
+    font-size: 15.5px;
+    max-width: 52ch;
+  }
 
   /* ---------- Services ---------- */
+
   .services-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 1px; background: var(--line); border: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
   }
-  @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr; } }
-  .service-card { background: var(--porcelain); padding: 38px 32px; transition: background 0.3s ease; }
-  .service-card:hover { background: var(--porcelain-dim); }
-  .service-card .icon { width: 32px; height: 32px; margin-bottom: 20px; }
-  .service-card .icon path { stroke: var(--teal-deep); }
-  .service-card h3 { font-family: var(--font-display); font-size: 19px; font-weight: 500; margin-bottom: 9px; }
-  .service-card p { font-size: 14.5px; color: #5C6862; }
+
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-card {
+    background: var(--porcelain);
+    padding: 38px 32px;
+    transition: background 0.3s ease;
+  }
+
+  .service-card:hover {
+    background: var(--porcelain-dim);
+  }
+
+  .service-card .icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 20px;
+  }
+
+  .service-card .icon path {
+    stroke: var(--teal-deep);
+  }
+
+  .service-card h3 {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 9px;
+  }
+
+  .service-card p {
+    font-size: 14.5px;
+    color: #5C6862;
+  }
 
   /* ---------- Gallery ---------- */
-  .gallery-section { background: var(--porcelain-dim); }
-  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-  @media (max-width: 900px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .gallery-section {
+    background: var(--porcelain-dim);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+
+  @media (max-width: 900px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   .gallery-tile {
-    aspect-ratio: 4/5; border-radius: 4px;
+    aspect-ratio: 4/5;
+    border-radius: 4px;
     background: linear-gradient(160deg, var(--teal-deep), var(--teal-mid));
-    position: relative; overflow: hidden;
-    display: flex; align-items: flex-end; padding: 18px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
   }
-  .gallery-tile:nth-child(2n) { background: linear-gradient(160deg, #1E463F, #0D3B34); }
-  .gallery-tile span { color: rgba(250,247,242,0.72); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.05em; }
+
+  .gallery-tile:nth-child(2n) {
+    background: linear-gradient(160deg, #1E463F, #0D3B34);
+  }
+
+  .gallery-tile span {
+    color: rgba(250,247,242,0.72);
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.05em;
+  }
+
   .gallery-tile::before {
-    content: ''; position: absolute; inset: 0;
-    background: radial-gradient(circle at 30% 20%, rgba(215,178,108,0.18), transparent 60%);
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        circle at 30% 20%,
+        rgba(215,178,108,0.18),
+        transparent 60%
+      );
   }
-  .gallery-note { margin-top: 22px; font-size: 13.5px; color: #7C877F; font-style: italic; }
 
   /* ---------- Testimonials ---------- */
-  .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-  @media (max-width: 900px) { .testimonial-grid { grid-template-columns: 1fr; } }
-  .testimonial-card { background: var(--porcelain); border: 1px solid var(--line); border-radius: 4px; padding: 30px 26px; }
-  .testimonial-card p.quote {
-    font-family: var(--font-display); font-style: italic;
-    font-size: 17px; line-height: 1.55; color: var(--ink); margin-bottom: 20px;
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
   }
-  .testimonial-card .who { font-size: 13px; font-weight: 600; color: var(--teal-deep); }
-  .testimonial-card .role { font-size: 12.5px; color: #8A948E; }
+
+  @media (max-width: 900px) {
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .testimonial-card {
+    background: var(--porcelain);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 30px 26px;
+  }
+
+  .testimonial-card p.quote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card .role {
+    font-size: 12.5px;
+    color: #8A948E;
+  }
 
   /* ---------- Booking ---------- */
-  .booking-section { background: var(--teal-deep); color: var(--porcelain); }
-  .booking-section .section-head p { color: rgba(250,247,242,0.68); }
-  .booking-section .eyebrow { color: var(--gold-bright); }
-  .booking-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 60px; }
-  @media (max-width: 900px) { .booking-grid { grid-template-columns: 1fr; } }
-  .booking-info { align-self: start; }
-  .booking-info h3 { font-family: var(--font-display); font-size: 21px; font-weight: 500; margin-bottom: 16px; }
-  .info-row { display: flex; gap: 14px; padding: 15px 0; border-top: 1px solid var(--line-dark); font-size: 14.5px; }
-  .info-row:first-of-type { border-top: none; }
-  .info-row .label { color: var(--gold-bright); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.05em; min-width: 110px; }
-  .info-row a:hover { text-decoration: underline; text-decoration-color: var(--gold-bright); }
+
+  .booking-section {
+    background: var(--teal-deep);
+    color: var(--porcelain);
+  }
+
+  .booking-section .section-head p {
+    color: rgba(250,247,242,0.68);
+  }
+
+  .booking-section .eyebrow {
+    color: var(--gold-bright);
+  }
+
+  .booking-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+  }
+
+  @media (max-width: 900px) {
+    .booking-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .booking-info {
+    align-self: start;
+  }
+
+  .booking-info h3 {
+    font-family: var(--font-display);
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  .info-row {
+    display: flex;
+    gap: 14px;
+    padding: 15px 0;
+    border-top: 1px solid var(--line-dark);
+    font-size: 14.5px;
+  }
+
+  .info-row:first-of-type {
+    border-top: none;
+  }
+
+  .info-row .label {
+    color: var(--gold-bright);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    min-width: 110px;
+  }
+
+  .info-row a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold-bright);
+  }
 
   form#booking-form {
     background: rgba(250,247,242,0.04);
     border: 1px solid var(--line-dark);
-    border-radius: 6px; padding: 34px;
+    border-radius: 6px;
+    padding: 34px;
   }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  @media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
-  .field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
-  .field label { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(250,247,242,0.6); }
-  .field label .req { color: var(--gold-bright); margin-left: 2px; }
-  .field input, .field select, .field textarea {
-    background: rgba(250,247,242,0.06); border: 1px solid var(--line-dark);
-    border-radius: 3px; padding: 12px 14px; color: var(--porcelain);
-    font-family: var(--font-body); font-size: 14.5px;
-  }
-  .field input:invalid:not(:placeholder-shown) { border-color: var(--danger); }
-  .field input::placeholder, .field textarea::placeholder { color: rgba(250,247,242,0.35); }
-  .field select option { color: var(--ink); }
-  .field textarea { resize: vertical; min-height: 80px; }
 
-  /* honeypot: hidden from sighted users and screen readers, visible to bots that auto-fill every field */
-  .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  @media (max-width: 560px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .field label {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(250,247,242,0.6);
+  }
+
+  .field label .req {
+    color: var(--gold-bright);
+    margin-left: 2px;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    background: rgba(250,247,242,0.06);
+    border: 1px solid var(--line-dark);
+    border-radius: 3px;
+    padding: 12px 14px;
+    color: var(--porcelain);
+    font-family: var(--font-body);
+    font-size: 14.5px;
+  }
+
+  .field input:invalid:not(:placeholder-shown) {
+    border-color: var(--danger);
+  }
+
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: rgba(250,247,242,0.35);
+  }
+
+  .field select option {
+    color: var(--ink);
+  }
+
+  .field textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 
   .form-submit {
-    width: 100%; background: var(--gold); color: var(--teal-deep);
-    border: none; padding: 15px; border-radius: 3px;
-    font-weight: 600; font-size: 15px; cursor: pointer;
-    transition: background 0.25s ease; font-family: var(--font-body);
-    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%;
+    background: var(--gold);
+    color: var(--teal-deep);
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
-  .form-submit:hover:not(:disabled) { background: var(--gold-bright); }
-  .form-submit:disabled { opacity: 0.65; cursor: not-allowed; }
+
+  .form-submit:hover:not(:disabled) {
+    background: var(--gold-bright);
+  }
+
+  .form-submit:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
 
   .spinner {
-    display: none; width: 14px; height: 14px; border-radius: 50%;
-    border: 2px solid rgba(13,59,52,0.3); border-top-color: var(--teal-deep);
+    display: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgba(13,59,52,0.3);
+    border-top-color: var(--teal-deep);
     animation: spin 0.7s linear infinite;
   }
-  .form-submit.loading .spinner { display: inline-block; }
-  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .form-submit.loading .spinner {
+    display: inline-block;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
   .form-note {
-    margin-top: 14px; font-size: 13.5px; font-family: var(--font-mono);
-    display: none; align-items: center; gap: 8px;
+    margin-top: 14px;
+    font-size: 13.5px;
+    font-family: var(--font-mono);
+    display: none;
+    align-items: center;
+    gap: 8px;
   }
-  .form-note.show { display: flex; }
-  .form-success { color: var(--gold-bright); }
-  .form-error { color: var(--danger); }
+
+  .form-note.show {
+    display: flex;
+  }
+
+  .form-success {
+    color: var(--gold-bright);
+  }
+
+  .form-error {
+    color: var(--danger);
+  }
+
+  /* ---------- Footer ---------- */
 
   footer {
-    padding: 40px 32px; border-top: 1px solid var(--line);
-    display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 16px; font-size: 13px; color: #8A948E;
+    padding: 40px 32px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+    color: #8A948E;
   }
-  footer .mark { width: 20px; height: 20px; opacity: 0.6; }
-  footer .mark path { stroke: var(--gold); fill: none; stroke-width: 1.3; }
 
-  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
-  .reveal.in { opacity: 1; transform: translateY(0); }
-  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+  footer .mark {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+  }
+
+  footer .mark path {
+    stroke: var(--gold);
+    fill: none;
+    stroke-width: 1.3;
+  }
+
+  /* ---------- Reveal ---------- */
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
 </style>
 </head>
+
 <body>
 
-<a href="#main" class="skip-link" data-i18n="skip_link">Skip to content</a>
+<a href="#main" class="skip-link" data-i18n="skip_link">
+  Անցնել հիմնական բովանդակությանը
+</a>
 
 <header class="site-nav">
+
   <div class="nav-inner">
+
     <div class="brand">
-      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+      </svg>
+
       Tovmasyan<span class="dot">.</span> Dental
     </div>
-    <nav class="links" aria-label="Primary">
-      <a href="#services" data-i18n="nav_services">Services</a>
-      <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
-      <a href="#testimonials" data-i18n="nav_patients">Patients</a>
-      <a href="#booking" data-i18n="nav_contact">Contact</a>
+
+    <nav class="links" aria-label="Primary navigation">
+      <a href="#services" data-i18n="nav_services">Ծառայություններ</a>
+      <a href="#gallery" data-i18n="nav_gallery">Կլինիկան</a>
+      <a href="#testimonials" data-i18n="nav_patients">Կարծիքներ</a>
+      <a href="#booking" data-i18n="nav_contact">Կապ</a>
     </nav>
+
     <div class="nav-right">
+
       <div class="lang-switch" role="group" aria-label="Language">
-        <button type="button" data-lang="en" aria-pressed="true" onclick="setLanguage('en')">EN</button>
-        <button type="button" data-lang="ru" aria-pressed="false" onclick="setLanguage('ru')">RU</button>
-        <button type="button" data-lang="hy" aria-pressed="false" onclick="setLanguage('hy')">ՀՅ</button>
+        <button type="button"
+                data-lang="en"
+                aria-pressed="false"
+                onclick="setLanguage('en')">
+          EN
+        </button>
+
+        <button type="button"
+                data-lang="ru"
+                aria-pressed="false"
+                onclick="setLanguage('ru')">
+          RU
+        </button>
+
+        <button type="button"
+                data-lang="hy"
+                aria-pressed="true"
+                onclick="setLanguage('hy')">
+          ՀՅ
+        </button>
       </div>
-      <a href="#booking" class="nav-cta" data-i18n="nav_cta">Book a visit</a>
-      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+
+      <a href="#booking"
+         class="nav-cta"
+         data-i18n="nav_cta">
+        Գրանցվել
+      </a>
+
+      <button type="button"
+              class="menu-toggle"
+              id="menu-toggle"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Բացել ընտրացանկը">
+
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+
       </button>
+
     </div>
   </div>
-  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
-    <a href="#services" data-i18n="nav_services">Services</a>
-    <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
-    <a href="#testimonials" data-i18n="nav_patients">Patients</a>
-    <a href="#booking" data-i18n="nav_contact">Contact</a>
+
+  <nav class="mobile-menu"
+       id="mobile-menu"
+       aria-label="Mobile navigation">
+
+    <a href="#services" data-i18n="nav_services">Ծառայություններ</a>
+    <a href="#gallery" data-i18n="nav_gallery">Կլինիկան</a>
+    <a href="#testimonials" data-i18n="nav_patients">Կարծիքներ</a>
+    <a href="#booking" data-i18n="nav_contact">Կապ</a>
+
   </nav>
+
 </header>
 
 <main id="main">
 
+<!-- ================= HERO ================= -->
+
 <section class="hero">
+
   <div class="hero-inner">
+
     <div>
-      <span class="eyebrow" data-i18n="hero_eyebrow">Armavir — Private dental practice</span>
-      <h1 data-i18n-html="hero_h1">Careful dentistry,<br>for people who notice<br><em>the details.</em></h1>
-      <p class="lede" data-i18n="hero_lede">Tovmasyan Dental Clinic pairs precise, modern technique with an unhurried, attentive visit — for patients who expect the same care in a clinic that they'd expect anywhere else in their life.</p>
+
+      <span class="eyebrow" data-i18n="hero_eyebrow">
+        Արմավիր · Մասնավոր ատամնաբուժական կլինիկա
+      </span>
+
+      <h1 data-i18n-html="hero_h1">
+        Ժամանակակից ստոմատոլոգիա<br>
+       ՝ հոգատար և անհատական<br>
+        <em>մոտեցմամբ</em>
+      </h1>
+
+      <p class="lede" data-i18n="hero_lede">
+        Թովմասյան ատամնաբուժական կլինիկայում համադրում ենք ժամանակակից տեխնոլոգիաները, բժշկական ճշգրտությունն ու անհատական մոտեցումը՝ ապահովելու հարմարավետ, վստահելի և բարձրորակ բուժում։
+      </p>
+
       <div class="hero-actions">
-        <a href="#booking" class="btn-primary" data-i18n="hero_cta_primary">Request an appointment</a>
-        <a href="#services" class="btn-ghost" data-i18n="hero_cta_ghost">View services</a>
+
+        <a href="#booking"
+           class="btn-primary"
+           data-i18n="hero_cta_primary">
+          Գրանցվել այցի
+        </a>
+
+        <a href="#services"
+           class="btn-ghost"
+           data-i18n="hero_cta_ghost">
+          Դիտել ծառայությունները
+        </a>
+
       </div>
+
     </div>
+
     <div class="molar-wrap">
-      <svg class="molar-svg" width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line illustration of a molar cross-section">
-        <path class="draw draw-outline" d="M95 70c-8 20-10 40-4 55 3 8 2 14-4 22-10 13-14 32-8 55 5 19 16 34 21 34 7 0 9-14 12-30 2-11 5-17 12-17s10 6 12 17c3 16 5 30 12 30 5 0 16-15 21-34 6-23 2-42-8-55-6-8-7-14-4-22 6-15 4-35-4-55-9-22-25-33-49-30-9 1-16 7-9 30Z"/>
-        <path class="draw draw-outline" d="M78 66C70 44 80 26 108 22c14-2 28 2 42 0 28-4 38 14 30 36" />
-        <path class="draw draw-root" d="M136 176c-2 22-6 42-13 58M164 176c2 22 6 42 13 58" />
-        <circle class="fill-pulp" cx="150" cy="118" r="10" />
-        <line class="label-line" x1="160" y1="118" x2="220" y2="118" />
-        <text x="224" y="121" data-i18n="molar_label_pulp">pulp chamber</text>
-        <line class="label-line" x1="150" y1="230" x2="150" y2="260" />
-        <text x="150" y="272" text-anchor="middle" data-i18n="molar_label_root">root canal</text>
+
+      <svg class="molar-svg"
+           width="300"
+           height="300"
+           viewBox="0 0 300 300"
+           fill="none"
+           xmlns="http://www.w3.org/2000/svg"
+           role="img"
+           aria-label="Ատամի կառուցվածքի գծային պատկեր">
+
+        <path class="draw draw-outline"
+              d="M95 70c-8 20-10 40-4 55 3 8 2 14-4 22-10 13-14 32-8 55 5 19 16 34 21 34 7 0 9-14 12-30 2-11 5-17 12-17s10 6 12 17c3 16 5 30 12 30 5 0 16-15 21-34 6-23 2-42-8-55-6-8-7-14-4-22 6-15 4-35-4-55-9-22-25-33-49-30-9 1-16 7-9 30Z"/>
+
+        <path class="draw draw-outline"
+              d="M78 66C70 44 80 26 108 22c14-2 28 2 42 0 28-4 38 14 30 36"/>
+
+        <path class="draw draw-root"
+              d="M136 176c-2 22-6 42-13 58M164 176c2 22 6 42 13 58"/>
+
+        <circle class="fill-pulp"
+                cx="150"
+                cy="118"
+                r="10"/>
+
+        <line class="label-line"
+              x1="160"
+              y1="118"
+              x2="220"
+              y2="118"/>
+
+        <text x="224"
+              y="121"
+              data-i18n="molar_label_pulp">
+          Պալպային խոռոչ
+        </text>
+
+        <line class="label-line"
+              x1="150"
+              y1="230"
+              x2="150"
+              y2="260"/>
+
+        <text x="150"
+              y="272"
+              text-anchor="middle"
+              data-i18n="molar_label_root">
+          Արմատային ջրանցք
+        </text>
+
       </svg>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- ================= SERVICES ================= -->
 
 <section id="services">
+
   <div class="wrap">
+
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="services_eyebrow">What we treat</span>
-      <h2 data-i18n-html="services_h2">A focused set of<br>services, done well.</h2>
-      <p data-i18n="services_p">Rather than offer everything, we concentrate on the procedures we can deliver at a consistently high standard.</p>
+
+      <span class="eyebrow" data-i18n="services_eyebrow">
+        Մեր ծառայությունները
+      </span>
+
+      <h2 data-i18n-html="services_h2">
+        Ատամնաբուժական ծառայություններ<br>
+       ՝ մեկ վստահելի վայրում։
+      </h2>
+
+      <p data-i18n="services_p">
+        Մենք կենտրոնանում ենք այն բուժումների վրա, որոնք իրականացնում ենք բարձր որակով՝ յուրաքանչյուր հիվանդի կարիքներին համապատասխան անհատական պլանավորմամբ։
+      </p>
+
     </div>
+
 
     <div class="services-grid">
+
       <div class="service-card reveal">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3 data-i18n="svc1_title">Preventive & hygiene</h3>
-        <p data-i18n="svc1_desc">Routine exams, cleaning, and early diagnostics — the foundation visit we recommend twice a year.</p>
+
+        <svg class="icon"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+          <path d="M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+
+        <h3 data-i18n="svc1_title">
+          Կանխարգելում և հիգիենա
+        </h3>
+
+        <p data-i18n="svc1_desc">
+          Պարբերական զննում, պրոֆեսիոնալ մաքրում և վաղ ախտորոշում՝ առողջ ժպիտը պահպանելու և խնդիրները ժամանակին կանխելու համար։
+        </p>
+
       </div>
+
+
       <div class="service-card reveal">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 12h4l2-6 4 12 2-6h4" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3 data-i18n="svc2_title">Restorative care</h3>
-        <p data-i18n="svc2_desc">Fillings, crowns, and root canal treatment, done with an emphasis on preserving natural structure.</p>
+
+        <svg class="icon"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+          <path d="M4 12h4l2-6 4 12 2-6h4"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+
+        <h3 data-i18n="svc2_title">
+          Վերականգնողական բուժում
+        </h3>
+
+        <p data-i18n="svc2_desc">
+          Կարիեսի բուժում, ատամների վերականգնում, պսակներ և արմատախողովակների բուժում՝ հնարավորինս պահպանելով ատամի բնական կառուցվածքը։
+        </p>
+
       </div>
+
+
       <div class="service-card reveal">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 8c0-2.8 3.1-5 7-5s7 2.2 7 5-3.1 5-7 5-7-2.2-7-5Z" stroke-width="1.3"/><path d="M8 13.5V17a4 4 0 0 0 8 0v-3.5" stroke-width="1.3" stroke-linecap="round"/></svg>
-        <h3 data-i18n="svc3_title">Cosmetic dentistry</h3>
-        <p data-i18n="svc3_desc">Whitening, veneers, and alignment consultations tailored to how a smile should look, not a template.</p>
+
+        <svg class="icon"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+          <path d="M5 8c0-2.8 3.1-5 7-5s7 2.2 7 5-3.1 5-7 5-7-2.2-7-5Z"
+                stroke-width="1.3"/>
+          <path d="M8 13.5V17a4 4 0 0 0 8 0v-3.5"
+                stroke-width="1.3"
+                stroke-linecap="round"/>
+        </svg>
+
+        <h3 data-i18n="svc3_title">
+          Էսթետիկ ստոմատոլոգիա
+        </h3>
+
+        <p data-i18n="svc3_desc">
+          Ատամների սպիտակեցում, վինիրներ և ժպիտի էսթետիկ բարելավման լուծումներ՝ բնական ու ներդաշնակ արդյունքի համար։
+        </p>
+
       </div>
+
+
       <div class="service-card reveal">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 4v16M6 8l6-4 6 4M6 16l6 4 6-4" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3 data-i18n="svc4_title">Implants</h3>
-        <p data-i18n="svc4_desc">Single-tooth and full-arch implant planning, from consultation through to the final restoration.</p>
+
+        <svg class="icon"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+          <path d="M12 4v16M6 8l6-4 6 4M6 16l6 4 6-4"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+
+        <h3 data-i18n="svc4_title">
+          Ատամնային իմպլանտներ
+        </h3>
+
+        <p data-i18n="svc4_desc">
+          Ատամների բացակայության դեպքում իմպլանտացիայի ամբողջական պլանավորում և բուժում՝ անհատական խորհրդատվությունից մինչև վերջնական վերականգնում։
+        </p>
+
       </div>
+
+
       <div class="service-card reveal">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7" stroke-width="1.3" stroke-linecap="round"/></svg>
-        <h3 data-i18n="svc5_title">Orthodontics</h3>
-        <p data-i18n="svc5_desc">Clear aligners and traditional braces for adults and adolescents, with quarterly progress reviews.</p>
+
+        <svg class="icon"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+          <path d="M4 6h16M4 12h10M4 18h7"
+                stroke-width="1.3"
+                stroke-linecap="round"/>
+        </svg>
+
+        <h3 data-i18n="svc5_title">
+          Օրթոդոնտիա
+        </h3>
+
+        <p data-i18n="svc5_desc">
+          Թափանցիկ ալայներներ և ավանդական բրեկետներ՝ ատամների ճիշտ դասավորության և առողջ, ներդաշնակ ժպիտի ձևավորման համար։
+        </p>
+
       </div>
+
+
       <div class="service-card reveal">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke-width="1.3" stroke-linecap="round"/></svg>
-        <h3 data-i18n="svc6_title">Emergency visits</h3>
-        <p data-i18n="svc6_desc">Same-day appointments held open daily for urgent pain, breakage, or trauma.</p>
+
+        <svg class="icon"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+          <path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+                stroke-width="1.3"
+                stroke-linecap="round"/>
+        </svg>
+
+        <h3 data-i18n="svc6_title">
+          Շտապ ատամնաբուժական օգնություն
+        </h3>
+
+        <p data-i18n="svc6_desc">
+          Ատամնացավի, վնասվածքի, կոտրված ատամի կամ այլ անհետաձգելի խնդրի դեպքում փորձում ենք ապահովել հնարավորինս արագ այց և անհրաժեշտ բուժօգնություն։
+        </p>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- ================= GALLERY ================= -->
 
 <section id="gallery" class="gallery-section">
+
   <div class="wrap">
+
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="gallery_eyebrow">Inside the clinic</span>
-      <h2 data-i18n="gallery_h2">The space, in practice.</h2>
-      <p data-i18n="gallery_p">A glimpse of the clinic and finished work. Replace these placeholders with real photography of your rooms, team, and case results.</p>
+
+      <span class="eyebrow" data-i18n="gallery_eyebrow">
+        Մեր կլինիկան
+      </span>
+
+      <h2 data-i18n-html="gallery_h2">
+        Հարմարավետ միջավայր՝<br>
+        որակյալ բուժման համար։
+      </h2>
+
+      <p data-i18n="gallery_p">
+        Ծանոթացեք մեր կլինիկայի միջավայրին, բուժասենյակներին և աշխատանքային գործընթացին։
+      </p>
+
     </div>
+
+
     <div class="gallery-grid">
-      <div class="gallery-tile reveal"><span data-i18n="gallery_tile1">Treatment room 01</span></div>
-      <div class="gallery-tile reveal"><span data-i18n="gallery_tile2">Reception</span></div>
-      <div class="gallery-tile reveal"><span data-i18n="gallery_tile3">Case study — before/after</span></div>
-      <div class="gallery-tile reveal"><span data-i18n="gallery_tile4">Sterilization suite</span></div>
+
+      <div class="gallery-tile reveal">
+        <span data-i18n="gallery_tile1">
+          Բուժասենյակ
+        </span>
+      </div>
+
+      <div class="gallery-tile reveal">
+        <span data-i18n="gallery_tile2">
+          Ընդունարան
+        </span>
+      </div>
+
+      <div class="gallery-tile reveal">
+        <span data-i18n="gallery_tile3">
+          Բուժման արդյունք
+        </span>
+      </div>
+
+      <div class="gallery-tile reveal">
+        <span data-i18n="gallery_tile4">
+          Ստերիլիզացիայի սենյակ
+        </span>
+      </div>
+
     </div>
-    <p class="gallery-note" data-i18n="gallery_note">Placeholder tiles shown — swap in real clinic and case photography before publishing.</p>
+
   </div>
+
 </section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
 
 <section id="testimonials">
+
   <div class="wrap">
+
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="testi_eyebrow">Patients, in their words</span>
-      <h2 data-i18n="testi_h2">Sample testimonials.</h2>
-      <p data-i18n="testi_p">Placeholder copy to show layout and tone — replace with real, consented patient reviews before launch.</p>
+
+      <span class="eyebrow" data-i18n="testi_eyebrow">
+        Հիվանդների կարծիքները
+      </span>
+
+      <h2 data-i18n="testi_h2">
+        Մեր մասին՝ նրանց խոսքերով։
+      </h2>
+
+      <p data-i18n="testi_p">
+        Ձեր վստահությունը մեր աշխատանքի ամենակարևոր գնահատականն է։
+      </p>
+
     </div>
+
+
     <div class="testimonial-grid">
+
       <div class="testimonial-card reveal">
-        <p class="quote" data-i18n="testi1_quote">"The first cleaning where I didn't dread the second half of the appointment. Everything was explained before it happened."</p>
-        <div class="who">Anahit M.</div>
-        <div class="role" data-i18n="testi1_role">Patient since 2023 · Sample copy</div>
+
+        <p class="quote" data-i18n="testi1_quote">
+          «Բժիշկը ամեն ինչ մանրամասն բացատրեց, և ամբողջ բուժման ընթացքում ինձ շատ հանգիստ ու վստահ էի զգում։»
+        </p>
+
+        <div class="role" data-i18n="testi1_role">
+          Հիվանդի կարծիք
+        </div>
+
       </div>
+
+
       <div class="testimonial-card reveal">
-        <p class="quote" data-i18n="testi2_quote">"Had a crown replaced. The fit was right the first time, and follow-up care was thorough."</p>
-        <div class="who">Davit K.</div>
-        <div class="role" data-i18n="testi2_role">Patient since 2022 · Sample copy</div>
+
+        <p class="quote" data-i18n="testi2_quote">
+          «Բուժումն անցավ շատ հարթ։ Արդյունքը բնական է, իսկ ամբողջ գործընթացը՝ շատ ուշադիր և մանրակրկիտ։»
+        </p>
+
+        <div class="role" data-i18n="testi2_role">
+          Հիվանդի կարծիք
+        </div>
+
       </div>
+
+
       <div class="testimonial-card reveal">
-        <p class="quote" data-i18n="testi3_quote">"Booked an emergency visit on short notice and was seen the same afternoon."</p>
-        <div class="who">Lilit S.</div>
-        <div class="role" data-i18n="testi3_role">Patient since 2024 · Sample copy</div>
+
+        <p class="quote" data-i18n="testi3_quote">
+          «Շտապ այցի համար կարողացա արագ գրանցվել և նույն օրը ստանալ անհրաժեշտ օգնությունը։»
+        </p>
+
+        <div class="role" data-i18n="testi3_role">
+          Հիվանդի կարծիք
+        </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- ================= BOOKING ================= -->
+
 <section id="booking" class="booking-section">
+
   <div class="wrap">
+
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="booking_eyebrow">Book a visit</span>
-      <h2 data-i18n-html="booking_h2">Register for an<br>appointment.</h2>
-      <p data-i18n="booking_p">Tell us a little about what you need, and preferred times — we'll confirm by phone or email within one business day.</p>
+
+      <span class="eyebrow" data-i18n="booking_eyebrow">
+        Գրանցում այցի համար
+      </span>
+
+      <h2 data-i18n-html="booking_h2">
+        Ձեր ժպիտի<br>
+        հաջորդ քայլը՝ այստեղ։
+      </h2>
+
+      <p data-i18n="booking_p">
+        Լրացրեք կարճ հայտը, նշեք ձեզ հարմար ժամանակը, և մենք կապ կհաստատենք ձեզ հետ՝ այցը հաստատելու համար։
+      </p>
+
     </div>
+
 
     <div class="booking-grid">
+
       <div class="booking-info reveal">
-        <h3 data-i18n="booking_info_h3">Clinic details</h3>
-        <div class="info-row"><span class="label" data-i18n="label_address">Address</span><span data-i18n="value_address">Armavir, Armenia — Shahumyan</span></div>
-        <div class="info-row"><span class="label" data-i18n="label_phone">Phone</span><a href="tel:+37477033012">+374 77033012</a></div>
-        <div class="info-row"><span class="label" data-i18n="label_email">Email</span><a href="mailto:tovmasyandental@gmail.com">tovmasyandental@gmail.com</a></div>
-        <div class="info-row"><span class="label" data-i18n="label_hours">Hours</span><span data-i18n="value_hours">Mon–Sat, 9:00–19:00</span></div>
+
+        <h3 data-i18n="booking_info_h3">
+          Կլինիկայի տվյալները
+        </h3>
+
+        <div class="info-row">
+          <span class="label" data-i18n="label_address">
+            Հասցե
+          </span>
+
+          <span data-i18n="value_address">
+            Արմավիր, Շահումյան 145
+          </span>
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="label" data-i18n="label_phone">
+            Հեռախոս
+          </span>
+
+          <a href="tel:+37477033012">
+            +374 77 033012
+          </a>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="label" data-i18n="label_email">
+            Էլ. փոստ
+          </span>
+
+          <a href="mailto:tovmasyandental@gmail.com">
+            tovmasyandental@gmail.com
+          </a>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="label" data-i18n="label_hours">
+            Աշխատանքային ժամեր
+          </span>
+
+          <span data-i18n="value_hours">
+            Երկ–Շբթ · 09:00–19:00
+          </span>
+
+        </div>
+
       </div>
 
-      <form id="booking-form" class="reveal" novalidate>
+
+      <form id="booking-form"
+            class="reveal"
+            novalidate>
+
         <div class="form-row">
+
           <div class="field">
-            <label for="name" data-i18n="form_name_label">Full name<span class="req">*</span></label>
-            <input type="text" id="name" name="name" autocomplete="name" data-i18n-placeholder="form_name_placeholder" placeholder="First and last name" required>
+
+            <label for="name"
+                   data-i18n="form_name_label">
+              Անուն, ազգանուն
+              <span class="req">*</span>
+            </label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   autocomplete="name"
+                   data-i18n-placeholder="form_name_placeholder"
+                   placeholder="Մուտքագրեք ձեր անունն ու ազգանունը"
+                   required>
+
           </div>
+
+
           <div class="field">
-            <label for="phone" data-i18n="form_phone_label">Phone<span class="req">*</span></label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+374 XX XXX XXX" required>
+
+            <label for="phone"
+                   data-i18n="form_phone_label">
+              Հեռախոս
+              <span class="req">*</span>
+            </label>
+
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   autocomplete="tel"
+                   placeholder="+374 XX XXX XXX"
+                   required>
+
           </div>
+
         </div>
+
+
         <div class="form-row">
+
           <div class="field">
-            <label for="service" data-i18n="form_service_label">Service needed<span class="req">*</span></label>
-            <select id="service" name="service" required>
-              <option value="" disabled selected data-i18n="form_service_placeholder">Select a service</option>
-              <option data-i18n="svc1_title">Preventive & hygiene</option>
-              <option data-i18n="svc2_title">Restorative care</option>
-              <option data-i18n="svc3_title">Cosmetic dentistry</option>
-              <option data-i18n="svc4_title">Implants</option>
-              <option data-i18n="svc5_title">Orthodontics</option>
-              <option data-i18n="svc6_title">Emergency visits</option>
+
+            <label for="service"
+                   data-i18n="form_service_label">
+              Անհրաժեշտ ծառայություն
+              <span class="req">*</span>
+            </label>
+
+            <select id="service"
+                    name="service"
+                    required>
+
+              <option value=""
+                      disabled
+                      selected
+                      data-i18n="form_service_placeholder">
+                Ընտրեք ծառայությունը
+              </option>
+
+              <option value="preventive"
+                      data-i18n="svc1_title">
+                Կանխարգելում և հիգիենա
+              </option>
+
+              <option value="restorative"
+                      data-i18n="svc2_title">
+                Վերականգնողական բուժում
+              </option>
+
+              <option value="cosmetic"
+                      data-i18n="svc3_title">
+                Էսթետիկ ստոմատոլոգիա
+              </option>
+
+              <option value="implants"
+                      data-i18n="svc4_title">
+                Ատամնային իմպլանտներ
+              </option>
+
+              <option value="orthodontics"
+                      data-i18n="svc5_title">
+                Օրթոդոնտիա
+              </option>
+
+              <option value="emergency"
+                      data-i18n="svc6_title">
+                Շտապ ատամնաբուժական օգնություն
+              </option>
+
             </select>
+
           </div>
+
+
           <div class="field">
-            <label for="date" data-i18n="form_date_label">Preferred date<span class="req">*</span></label>
-            <input type="date" id="date" name="date" required>
+
+            <label for="date"
+                   data-i18n="form_date_label">
+              Նախընտրելի ամսաթիվ
+              <span class="req">*</span>
+            </label>
+
+            <input type="date"
+                   id="date"
+                   name="date"
+                   required>
+
           </div>
+
         </div>
+
+
         <div class="field">
-          <label for="notes" data-i18n="form_notes_label">Notes (optional)</label>
-          <textarea id="notes" name="notes" data-i18n-placeholder="form_notes_placeholder" placeholder="Anything we should know before your visit"></textarea>
+
+          <label for="notes"
+                 data-i18n="form_notes_label">
+            Լրացուցիչ տեղեկություն (ըստ ցանկության)
+          </label>
+
+          <textarea id="notes"
+                    name="notes"
+                    data-i18n-placeholder="form_notes_placeholder"
+                    placeholder="Նշեք այն տեղեկությունը, որը կօգնի մեզ նախապես պատրաստվել ձեր այցին"></textarea>
+
         </div>
-        <!-- Honeypot: real visitors never see or fill this; bots that auto-fill every input do -->
-        <div class="field hp-field" aria-hidden="true">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+
+
+        <div class="field hp-field"
+             aria-hidden="true">
+
+          <label for="company">
+            Company
+          </label>
+
+          <input type="text"
+                 id="company"
+                 name="company"
+                 tabindex="-1"
+                 autocomplete="off">
+
         </div>
-        <button type="submit" class="form-submit" id="form-submit-btn">
-          <span class="spinner" aria-hidden="true"></span>
-          <span data-i18n="form_submit">Request appointment</span>
+
+
+        <button type="submit"
+                class="form-submit"
+                id="form-submit-btn">
+
+          <span class="spinner"
+                aria-hidden="true">
+          </span>
+
+          <span data-i18n="form_submit">
+            Ուղարկել հայտը
+          </span>
+
         </button>
-        <div class="form-note form-success" id="form-success" role="status" aria-live="polite">
-          <span data-i18n="form_success">✓ Request received — we'll confirm by phone shortly.</span>
+
+
+        <div class="form-note form-success"
+             id="form-success"
+             role="status"
+             aria-live="polite">
+
+          <span data-i18n="form_success">
+            ✓ Ձեր հայտը հաջողությամբ ուղարկվել է։ Մենք շուտով կապ կհաստատենք ձեզ հետ։
+          </span>
+
         </div>
-        <div class="form-note form-error" id="form-error" role="alert" aria-live="assertive">
-          <span data-i18n="form_error">Something went wrong — please call us instead, or try again.</span>
+
+
+        <div class="form-note form-error"
+             id="form-error"
+             role="alert"
+             aria-live="assertive">
+
+          <span data-i18n="form_error">
+            Չհաջողվեց ուղարկել հայտը։ Խնդրում ենք կրկին փորձել կամ կապվել մեզ հետ հեռախոսով։
+          </span>
+
         </div>
+
       </form>
+
     </div>
+
   </div>
+
 </section>
 
 </main>
 
+
 <footer>
-  <div data-i18n="footer_copy">© 2026 Tovmasyan Dental Clinic. All rights reserved.</div>
-  <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+  <div data-i18n="footer_copy">
+    © 2026 Թովմասյան ատամնաբուժական կլինիկա։ Բոլոր իրավունքները պաշտպանված են։
+  </div>
+
+  <svg class="mark"
+       viewBox="0 0 24 24"
+       aria-hidden="true">
+
+    <path d="M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+  </svg>
+
 </footer>
 
+
 <script>
+
   const translations = {
-    en: {
-      skip_link: "Skip to content",
-      nav_services: "Services", nav_gallery: "Gallery", nav_patients: "Patients", nav_contact: "Contact", nav_cta: "Book a visit",
-      hero_eyebrow: "Armavir — Private dental practice",
-      hero_h1: "Careful dentistry,<br>for people who notice<br><em>the details.</em>",
-      hero_lede: "Tovmasyan Dental Clinic pairs precise, modern technique with an unhurried, attentive visit — for patients who expect the same care in a clinic that they'd expect anywhere else in their life.",
-      hero_cta_primary: "Request an appointment", hero_cta_ghost: "View services",
-      molar_label_pulp: "pulp chamber", molar_label_root: "root canal",
-      services_eyebrow: "What we treat",
-      services_h2: "A focused set of<br>services, done well.",
-      services_p: "Rather than offer everything, we concentrate on the procedures we can deliver at a consistently high standard.",
-      svc1_title: "Preventive & hygiene", svc1_desc: "Routine exams, cleaning, and early diagnostics — the foundation visit we recommend twice a year.",
-      svc2_title: "Restorative care", svc2_desc: "Fillings, crowns, and root canal treatment, done with an emphasis on preserving natural structure.",
-      svc3_title: "Cosmetic dentistry", svc3_desc: "Whitening, veneers, and alignment consultations tailored to how a smile should look, not a template.",
-      svc4_title: "Implants", svc4_desc: "Single-tooth and full-arch implant planning, from consultation through to the final restoration.",
-      svc5_title: "Orthodontics", svc5_desc: "Clear aligners and traditional braces for adults and adolescents, with quarterly progress reviews.",
-      svc6_title: "Emergency visits", svc6_desc: "Same-day appointments held open daily for urgent pain, breakage, or trauma.",
-      gallery_eyebrow: "Inside the clinic", gallery_h2: "The space, in practice.",
-      gallery_p: "A glimpse of the clinic and finished work. Replace these placeholders with real photography of your rooms, team, and case results.",
-      gallery_tile1: "Treatment room 01", gallery_tile2: "Reception", gallery_tile3: "Case study — before/after", gallery_tile4: "Sterilization suite",
-      gallery_note: "Placeholder tiles shown — swap in real clinic and case photography before publishing.",
-      testi_eyebrow: "Patients, in their words", testi_h2: "Sample testimonials.",
-      testi_p: "Placeholder copy to show layout and tone — replace with real, consented patient reviews before launch.",
-      testi1_quote: "\u201cThe first cleaning where I didn\u2019t dread the second half of the appointment. Everything was explained before it happened.\u201d",
-      testi1_role: "Patient since 2023 · Sample copy",
-      testi2_quote: "\u201cHad a crown replaced. The fit was right the first time, and follow-up care was thorough.\u201d",
-      testi2_role: "Patient since 2022 · Sample copy",
-      testi3_quote: "\u201cBooked an emergency visit on short notice and was seen the same afternoon.\u201d",
-      testi3_role: "Patient since 2024 · Sample copy",
-      booking_eyebrow: "Book a visit", booking_h2: "Register for an<br>appointment.",
-      booking_p: "Tell us a little about what you need, and preferred times — we'll confirm by phone or email within one business day.",
-      booking_info_h3: "Clinic details",
-      label_address: "Address", value_address: "Armavir, Armenia — add street address",
-      label_phone: "Phone", label_email: "Email", label_hours: "Hours", value_hours: "Mon–Sat, 9:00–19:00",
-      form_name_label: "Full name", form_name_placeholder: "First and last name",
-      form_phone_label: "Phone",
-      form_service_label: "Service needed", form_service_placeholder: "Select a service",
-      form_date_label: "Preferred date",
-      form_notes_label: "Notes (optional)", form_notes_placeholder: "Anything we should know before your visit",
-      form_submit: "Request appointment",
-      form_success: "✓ Request received — we'll confirm by phone shortly.",
-      form_error: "Something went wrong — please call us instead, or try again.",
-      footer_copy: "© 2026 Tovmasyan Dental Clinic. All rights reserved."
-    },
-    ru: {
-      skip_link: "Перейти к содержанию",
-      nav_services: "Услуги", nav_gallery: "Галерея", nav_patients: "Пациенты", nav_contact: "Контакты", nav_cta: "Записаться на приём",
-      hero_eyebrow: "Армавир — частная стоматологическая клиника",
-      hero_h1: "Внимательная стоматология<br>для тех, кто замечает<br><em>детали.</em>",
-      hero_lede: "Стоматологическая клиника Tovmasyan сочетает точную, современную технику с неспешным, внимательным приёмом — для пациентов, которые ожидают такой же заботы в клинике, как и в любой другой сфере своей жизни.",
-      hero_cta_primary: "Записаться на приём", hero_cta_ghost: "Смотреть услуги",
-      molar_label_pulp: "пульпарная камера", molar_label_root: "корневой канал",
-      services_eyebrow: "Что мы лечим",
-      services_h2: "Ограниченный набор<br>услуг, выполненных качественно.",
-      services_p: "Вместо того чтобы предлагать всё подряд, мы сосредоточены на процедурах, которые можем выполнять стабильно на высоком уровне.",
-      svc1_title: "Профилактика и гигиена", svc1_desc: "Регулярные осмотры, чистка и ранняя диагностика — базовый визит, который мы рекомендуем дважды в год.",
-      svc2_title: "Восстановительное лечение", svc2_desc: "Пломбы, коронки и лечение корневых каналов с акцентом на сохранение естественной структуры зуба.",
-      svc3_title: "Косметическая стоматология", svc3_desc: "Отбеливание, виниры и консультации по выравниванию, подобранные под то, как должна выглядеть именно ваша улыбка, а не по шаблону.",
-      svc4_title: "Имплантация", svc4_desc: "Планирование имплантации одного зуба или полной челюсти — от консультации до финальной реставрации.",
-      svc5_title: "Ортодонтия", svc5_desc: "Прозрачные каппы и традиционные брекеты для взрослых и подростков с ежеквартальной проверкой прогресса.",
-      svc6_title: "Экстренные визиты", svc6_desc: "Ежедневно резервируем места для срочных визитов при боли, сколах или травмах — в день обращения.",
-      gallery_eyebrow: "Внутри клиники", gallery_h2: "Пространство на практике.",
-      gallery_p: "Небольшой обзор клиники и выполненных работ. Замените эти заглушки на реальные фотографии кабинетов, команды и результатов.",
-      gallery_tile1: "Кабинет 01", gallery_tile2: "Ресепшн", gallery_tile3: "Кейс — до/после", gallery_tile4: "Стерилизационная",
-      gallery_note: "Показаны временные заглушки — перед публикацией замените их реальными фотографиями клиники и случаев.",
-      testi_eyebrow: "Пациенты о нас", testi_h2: "Примеры отзывов.",
-      testi_p: "Пример текста для демонстрации макета и тона — перед запуском замените реальными отзывами пациентов с их согласия.",
-      testi1_quote: "«Впервые чистка зубов, где я не боялась второй половины приёма. Всё объясняли заранее.»",
-      testi1_role: "Пациент с 2023 года · Пример текста",
-      testi2_quote: "«Мне поставили новую коронку. Всё подошло с первого раза, а последующее наблюдение было тщательным.»",
-      testi2_role: "Пациент с 2022 года · Пример текста",
-      testi3_quote: "«Записался на срочный приём почти без предупреждения — и меня приняли в тот же день.»",
-      testi3_role: "Пациент с 2024 года · Пример текста",
-      booking_eyebrow: "Запись на приём", booking_h2: "Записаться на<br>приём.",
-      booking_p: "Расскажите немного о том, что вам нужно, и удобное время — мы подтвердим по телефону или email в течение одного рабочего дня.",
-      booking_info_h3: "Данные клиники",
-      label_address: "Адрес", value_address: "Армавир, Армения — добавьте адрес улицы",
-      label_phone: "Телефон", label_email: "Email", label_hours: "Часы работы", value_hours: "Пн–Сб, 9:00–19:00",
-      form_name_label: "Полное имя", form_name_placeholder: "Имя и фамилия",
-      form_phone_label: "Телефон",
-      form_service_label: "Необходимая услуга", form_service_placeholder: "Выберите услугу",
-      form_date_label: "Желаемая дата",
-      form_notes_label: "Примечания (необязательно)", form_notes_placeholder: "Всё, что нам стоит знать перед вашим визитом",
-      form_submit: "Отправить заявку",
-      form_success: "✓ Заявка получена — скоро подтвердим по телефону.",
-      form_error: "Что-то пошло не так — позвоните нам или попробуйте ещё раз.",
-      footer_copy: "© 2026 Стоматологическая клиника Tovmasyan. Все права защищены."
-    },
+
+    /* ================= ARMENIAN ================= */
+
     hy: {
-  skip_link: "Անցնել հիմնական բովանդակությանը",
 
-  nav_services: "Ծառայություններ",
-  nav_gallery: "Կլինիկան",
-  nav_patients: "Հիվանդների կարծիքներ",
-  nav_contact: "Կապ",
-  nav_cta: "Գրանցվել",
+      skip_link: "Անցնել հիմնական բովանդակությանը",
 
-  hero_eyebrow: "Արմավիր · Մասնավոր ատամնաբուժական կլինիկա",
-  hero_h1: "Ժամանակակից ստոմատոլոգիա<br>՝ հոգատար և անհատական<br><em>մոտեցմամբ</em>",
-  hero_lede: "Թովմասյան ատամնաբուժական կլինիկայում համադրում ենք ժամանակակից տեխնոլոգիաները, բժշկական ճշգրտությունն ու անհատական մոտեցումը՝ ապահովելու հարմարավետ, վստահելի և բարձրորակ բուժում։",
+      nav_services: "Ծառայություններ",
+      nav_gallery: "Կլինիկան",
+      nav_patients: "Կարծիքներ",
+      nav_contact: "Կապ",
+      nav_cta: "Գրանցվել",
 
-  hero_cta_primary: "Գրանցվել այցի",
-  hero_cta_ghost: "Դիտել ծառայությունները",
+      mobile_menu_open: "Բացել ընտրացանկը",
+      mobile_menu_close: "Փակել ընտրացանկը",
 
-  molar_label_pulp: "Պալպային խոռոչ",
-  molar_label_root: "Արմատային ջրանցք",
+      hero_eyebrow:
+        "Արմավիր · Մասնավոր ատամնաբուժական կլինիկա",
 
-  services_eyebrow: "Մեր ծառայությունները",
-  services_h2: "Ատամնաբուժական ծառայություններ<br>՝ մեկ վստահելի վայրում։",
-  services_p: "Մենք կենտրոնանում ենք այն բուժումների վրա, որոնք իրականացնում ենք բարձր որակով՝ յուրաքանչյուր հիվանդի կարիքներին համապատասխան անհատական պլանավորմամբ։",
+      hero_h1:
+        "Ժամանակակից ստոմատոլոգիա<br>՝ հոգատար և անհատական<br><em>մոտեցմամբ</em>",
 
-  svc1_title: "Կանխարգելում և հիգիենա",
-  svc1_desc: "Պարբերական զննում, պրոֆեսիոնալ մաքրում և վաղ ախտորոշում՝ առողջ ժպիտը պահպանելու և խնդիրները ժամանակին կանխելու համար։",
+      hero_lede:
+        "Թովմասյան ատամնաբուժական կլինիկայում համադրում ենք ժամանակակից տեխնոլոգիաները, բժշկական ճշգրտությունն ու անհատական մոտեցումը՝ ապահովելու հարմարավետ, վստահելի և բարձրորակ բուժում։",
 
-  svc2_title: "Վերականգնողական բուժում",
-  svc2_desc: "Կարիեսի բուժում, ատամների վերականգնում, պսակներ և արմատախողովակների բուժում՝ հնարավորինս պահպանելով ատամի բնական կառուցվածքը։",
+      hero_cta_primary:
+        "Գրանցվել այցի",
 
-  svc3_title: "Էսթետիկ ստոմատոլոգիա",
-  svc3_desc: "Ատամների սպիտակեցում, վինիրներ և ժպիտի էսթետիկ բարելավման լուծումներ՝ բնական ու ներդաշնակ արդյունքի համար։",
+      hero_cta_ghost:
+        "Դիտել ծառայությունները",
 
-  svc4_title: "Ատամնային իմպլանտներ",
-  svc4_desc: "Ատամների բացակայության դեպքում իմպլանտացիայի ամբողջական պլանավորում և բուժում՝ անհատական խորհրդատվությունից մինչև վերջնական վերականգնում։",
+      molar_label_pulp:
+        "Պալպային խոռոչ",
 
-  svc5_title: "Օրթոդոնտիա",
-  svc5_desc: "Թափանցիկ ալայներներ և ավանդական բրեկետներ՝ ատամների ճիշտ դասավորության և առողջ, ներդաշնակ ժպիտի ձևավորման համար։",
+      molar_label_root:
+        "Արմատային ջրանցք",
 
-  svc6_title: "Շտապ ատամնաբուժական օգնություն",
-  svc6_desc: "Ատամնացավի, վնասվածքի, կոտրված ատամի կամ այլ անհետաձգելի խնդրի դեպքում փորձում ենք ապահովել հնարավորինս արագ այց և անհրաժեշտ բուժօգնություն։",
 
-  gallery_eyebrow: "Մեր կլինիկան",
-  gallery_h2: "Հարմարավետ միջավայր՝<br>որակյալ բուժման համար։",
-  gallery_p: "Ծանոթացեք մեր կլինիկային, աշխատանքային միջավայրին և բուժման ընթացքին։ Այստեղ յուրաքանչյուր մանրուք ստեղծված է ձեր հարմարավետության և վստահության համար։",
+      services_eyebrow:
+        "Մեր ծառայությունները",
 
-  gallery_tile1: "Բուժասենյակ",
-  gallery_tile2: "Ընդունարան",
-  gallery_tile3: "Բուժման արդյունք",
-  gallery_tile4: "Ստերիլիզացիայի սենյակ",
+      services_h2:
+        "Ատամնաբուժական ծառայություններ<br>՝ մեկ վստահելի վայրում։",
 
-  testi_eyebrow: "Հիվանդների կարծիքները",
-  testi_h2: "Մեր մասին՝ նրանց խոսքերով։",
-  testi_p: "Յուրաքանչյուր այց մեզ համար վստահության հարաբերություն կառուցելու հնարավորություն է։ Ստորև ներկայացված են մեր հիվանդների կարծիքների օրինակներ։",
+      services_p:
+        "Մենք կենտրոնանում ենք այն բուժումների վրա, որոնք իրականացնում ենք բարձր որակով՝ յուրաքանչյուր հիվանդի կարիքներին համապատասխան անհատական պլանավորմամբ.",
 
-  testi1_quote: "«Շատ հանգիստ և հոգատար մթնոլորտ էր։ Բժիշկը մանրամասն բացատրեց բուժման յուրաքանչյուր քայլ, և առաջին անգամ ատամնաբույժի մոտ այցն ինձ համար սթրեսային չէր։»",
-  testi1_role: "Հիվանդ · 2023 թվականից",
+      svc1_title:
+        "Կանխարգելում և հիգիենա",
 
-  testi2_quote: "«Պսակի տեղադրումը անցավ շատ հարթ։ Արդյունքը բնական է, իսկ բուժման ընթացքում ամեն ինչ արվեց շատ ուշադիր և մանրակրկիտ։»",
-  testi2_role: "Հիվանդ · 2022 թվականից",
+      svc1_desc:
+        "Պարբերական զննում, պրոֆեսիոնալ մաքրում և վաղ ախտորոշում՝ առողջ ժպիտը պահպանելու և խնդիրները ժամանակին կանխելու համար։",
 
-  testi3_quote: "«Շտապ այցի համար կարողացա արագ գրանցվել և նույն օրը ստանալ անհրաժեշտ օգնությունը։ Շատ շնորհակալ եմ վերաբերմունքի և արագ արձագանքի համար։»",
-  testi3_role: "Հիվանդ · 2024 թվականից",
+      svc2_title:
+        "Վերականգնողական բուժում",
 
-  booking_eyebrow: "Գրանցում այցի համար",
-  booking_h2: "Ձեր ժպիտի<br>հաջորդ քայլը՝ այստեղ։",
-  booking_p: "Լրացրեք կարճ հայտը, նշեք ձեզ հարմար ժամանակը, և մենք կապ կհաստատենք ձեզ հետ՝ այցը հաստատելու համար։",
+      svc2_desc:
+        "Կարիեսի բուժում, ատամների վերականգնում, պսակներ և արմատախողովակների բուժում՝ հնարավորինս պահպանելով ատամի բնական կառուցվածքը։",
 
-  booking_info_h3: "Կլինիկայի տվյալները",
+      svc3_title:
+        "Էսթետիկ ստոմատոլոգիա",
 
-  label_address: "Հասցե",
-  value_address: "Արմավիր, Շահումյան 145",
+      svc3_desc:
+        "Ատամների սպիտակեցում, վինիրներ և ժպիտի էսթետիկ բարելավման լուծումներ՝ բնական ու ներդաշնակ արդյունքի համար։",
 
-  label_phone: "Հեռախոս",
-  label_email: "Էլ. փոստ",
-  label_hours: "Աշխատանքային ժամեր",
-  value_hours: "Երկ–Շբթ · 09:00–19:00",
+      svc4_title:
+        "Ատամնային իմպլանտներ",
 
-  form_name_label: "Անուն, ազգանուն",
-  form_name_placeholder: "Մուտքագրեք ձեր անունն ու ազգանունը",
+      svc4_desc:
+        "Ատամների բացակայության դեպքում իմպլանտացիայի ամբողջական պլանավորում և բուժում՝ անհատական խորհրդատվությունից մինչև վերջնական վերականգնում։",
 
-  form_phone_label: "Հեռախոս",
-  
-  form_service_label: "Ինչ ծառայություն է ձեզ անհրաժեշտ",
-  form_service_placeholder: "Ընտրեք ծառայությունը",
+      svc5_title:
+        "Օրթոդոնտիա",
 
-  form_date_label: "Նախընտրելի ամսաթիվ",
+      svc5_desc:
+        "Թափանցիկ ալայներներ և ավանդական բրեկետներ՝ ատամների ճիշտ դասավորության և առողջ, ներդաշնակ ժպիտի ձևավորման համար։",
 
-  form_notes_label: "Լրացուցիչ տեղեկություն (ըստ ցանկության)",
-  form_notes_placeholder: "Նշեք այն տեղեկությունը, որը կօգնի մեզ նախապես պատրաստվել ձեր այցին",
+      svc6_title:
+        "Շտապ ատամնաբուժական օգնություն",
 
-  form_submit: "Ուղարկել հայտը",
+      svc6_desc:
+        "Ատամնացավի, վնասվածքի, կոտրված ատամի կամ այլ անհետաձգելի խնդրի դեպքում փորձում ենք ապահովել հնարավորինս արագ այց և անհրաժեշտ բուժօգնություն։",
 
-  form_success: "✓ Ձեր հայտը հաջողությամբ ուղարկվել է։ Մենք շուտով կապ կհաստատենք ձեզ հետ։",
-  form_error: "Չհաջողվեց ուղարկել հայտը։ Խնդրում ենք կրկին փորձել կամ կապվել մեզ հետ հեռախոսով։",
 
-  footer_copy: "© 2026 Թովմասյան ատամնաբուժական կլինիկա։ Բոլոր իրավունքները պաշտպանված են։"
-}
+      gallery_eyebrow:
+        "Մեր կլինիկան",
+
+      gallery_h2:
+        "Հարմարավետ միջավայր՝<br>որակյալ բուժման համար։",
+
+      gallery_p:
+        "Ծանոթացեք մեր կլինիկայի միջավայրին, բուժասենյակներին և աշխատանքային գործընթացին։",
+
+      gallery_tile1:
+        "Բուժասենյակ",
+
+      gallery_tile2:
+        "Ընդունարան",
+
+      gallery_tile3:
+        "Բուժման արդյունք",
+
+      gallery_tile4:
+        "Ստերիլիզացիայի սենյակ",
+
+
+      testi_eyebrow:
+        "Հիվանդների կարծիքները",
+
+      testi_h2:
+        "Մեր մասին՝ նրանց խոսքերով։",
+
+      testi_p:
+        "Ձեր վստահությունը մեր աշխատանքի ամենակարևոր գնահատականն է։",
+
+      testi1_quote:
+        "«Բժիշկը ամեն ինչ մանրամասն բացատրեց, և ամբողջ բուժման ընթացքում ինձ շատ հանգիստ ու վստահ էի զգում։»",
+
+      testi1_role:
+        "Հիվանդի կարծիք",
+
+      testi2_quote:
+        "«Բուժումն անցավ շատ հարթ։ Արդյունքը բնական է, իսկ ամբողջ գործընթացը՝ շատ ուշադիր և մանրակրկիտ։»",
+
+      testi2_role:
+        "Հիվանդի կարծիք",
+
+      testi3_quote:
+        "«Շտապ այցի համար կարողացա արագ գրանցվել և նույն օրը ստանալ անհրաժեշտ օգնությունը։»",
+
+      testi3_role:
+        "Հիվանդի կարծիք",
+
+
+      booking_eyebrow:
+        "Գրանցում այցի համար",
+
+      booking_h2:
+        "Ձեր ժպիտի<br>հաջորդ քայլը՝ այստեղ։",
+
+      booking_p:
+        "Լրացրեք կարճ հայտը, նշեք ձեզ հարմար ժամանակը, և մենք կապ կհաստատենք ձեզ հետ՝ այցը հաստատելու համար։",
+
+      booking_info_h3:
+        "Կլինիկայի տվյալները",
+
+      label_address:
+        "Հասցե",
+
+      value_address:
+        "Արմավիր, Շահումյան 145",
+
+      label_phone:
+        "Հեռախոս",
+
+      label_email:
+        "Էլ. փոստ",
+
+      label_hours:
+        "Աշխատանքային ժամեր",
+
+      value_hours:
+        "Երկ–Շբթ · 09:00–19:00",
+
+
+      form_name_label:
+        "Անուն, ազգանուն",
+
+      form_name_placeholder:
+        "Մուտքագրեք ձեր անունն ու ազգանունը",
+
+      form_phone_label:
+        "Հեռախոս",
+
+      form_service_label:
+        "Անհրաժեշտ ծառայություն",
+
+      form_service_placeholder:
+        "Ընտրեք ծառայությունը",
+
+      form_date_label:
+        "Նախընտրելի ամսաթիվ",
+
+      form_notes_label:
+        "Լրացուցիչ տեղեկություն (ըստ ցանկության)",
+
+      form_notes_placeholder:
+        "Նշեք այն տեղեկությունը, որը կօգնի մեզ նախապես պատրաստվել ձեր այցին",
+
+      form_submit:
+        "Ուղարկել հայտը",
+
+      form_success:
+        "✓ Ձեր հայտը հաջողությամբ ուղարկվել է։ Մենք շուտով կապ կհաստատենք ձեզ հետ։",
+
+      form_error:
+        "Չհաջողվեց ուղարկել հայտը։ Խնդրում ենք կրկին փորձել կամ կապվել մեզ հետ հեռախոսով։",
+
+      footer_copy:
+        "© 2026 Թովմասյան ատամնաբուժական կլինիկա։ Բոլոր իրավունքները պաշտպանված են։"
+
+    },
+
+
+    /* ================= RUSSIAN ================= */
+
+    ru: {
+
+      skip_link: "Перейти к основному содержанию",
+
+      nav_services: "Услуги",
+      nav_gallery: "Клиника",
+      nav_patients: "Отзывы",
+      nav_contact: "Контакты",
+      nav_cta: "Записаться",
+
+      mobile_menu_open: "Открыть меню",
+      mobile_menu_close: "Закрыть меню",
+
+      hero_eyebrow:
+        "Армавир · Частная стоматологическая клиника",
+
+      hero_h1:
+        "Современная стоматология<br>с внимательным и индивидуальным<br><em>подходом</em>",
+
+      hero_lede:
+        "В стоматологической клинике Tovmasyan мы сочетаем современные технологии, точность лечения и индивидуальный подход, чтобы каждый визит был комфортным, понятным и качественным.",
+
+      hero_cta_primary:
+        "Записаться на приём",
+
+      hero_cta_ghost:
+        "Наши услуги",
+
+      molar_label_pulp:
+        "Пульпарная камера",
+
+      molar_label_root:
+        "Корневой канал",
+
+
+      services_eyebrow:
+        "Наши услуги",
+
+      services_h2:
+        "Стоматологическая помощь<br>в одном месте.",
+
+      services_p:
+        "Мы сосредоточены на процедурах, которые можем выполнять на стабильно высоком уровне, подбирая лечение индивидуально для каждого пациента.",
+
+      svc1_title:
+        "Профилактика и гигиена",
+
+      svc1_desc:
+        "Регулярные осмотры, профессиональная чистка и ранняя диагностика — основа для сохранения здоровья зубов и дёсен.",
+
+      svc2_title:
+        "Восстановительное лечение",
+
+      svc2_desc:
+        "Лечение кариеса, восстановление зубов, коронки и лечение корневых каналов с максимально бережным отношением к естественным тканям зуба.",
+
+      svc3_title:
+        "Эстетическая стоматология",
+
+      svc3_desc:
+        "Отбеливание, виниры и эстетические решения для улыбки — с акцентом на естественный и гармоничный результат.",
+
+      svc4_title:
+        "Зубные импланты",
+
+      svc4_desc:
+        "Планирование и проведение имплантации — от первичной консультации до окончательного восстановления зубного ряда.",
+
+      svc5_title:
+        "Ортодонтия",
+
+      svc5_desc:
+        "Прозрачные элайнеры и традиционные брекеты для правильного положения зубов и гармоничной улыбки.",
+
+      svc6_title:
+        "Экстренная помощь",
+
+      svc6_desc:
+        "При сильной боли, травме, сколе или переломе зуба стараемся организовать максимально быстрый приём и необходимую помощь.",
+
+
+      gallery_eyebrow:
+        "Наша клиника",
+
+      gallery_h2:
+        "Комфортная атмосфера<br>для качественного лечения.",
+
+      gallery_p:
+        "Познакомьтесь с нашей клиникой, кабинетами и рабочей атмосферой.",
+
+      gallery_tile1:
+        "Лечебный кабинет",
+
+      gallery_tile2:
+        "Ресепшн",
+
+      gallery_tile3:
+        "Результат лечения",
+
+      gallery_tile4:
+        "Стерилизационная",
+
+
+      testi_eyebrow:
+        "Отзывы пациентов",
+
+      testi_h2:
+        "О нас — словами пациентов.",
+
+      testi_p:
+        "Доверие пациентов — самая важная оценка нашей работы.",
+
+      testi1_quote:
+        "«Врач подробно объяснил каждый этап лечения, поэтому я чувствовал себя спокойно и уверенно на протяжении всего приёма.»",
+
+      testi1_role:
+        "Отзыв пациента",
+
+      testi2_quote:
+        "«Лечение прошло очень спокойно. Результат выглядит естественно, а ко всем деталям отнеслись очень внимательно.»",
+
+      testi2_role:
+        "Отзыв пациента",
+
+      testi3_quote:
+        "«Мне удалось быстро записаться на срочный приём и получить необходимую помощь в тот же день.»",
+
+      testi3_role:
+        "Отзыв пациента",
+
+
+      booking_eyebrow:
+        "Запись на приём",
+
+      booking_h2:
+        "Следующий шаг<br>к здоровой улыбке.",
+
+      booking_p:
+        "Заполните короткую форму и укажите удобную дату. Мы свяжемся с вами, чтобы подтвердить визит.",
+
+      booking_info_h3:
+        "Контакты клиники",
+
+      label_address:
+        "Адрес",
+
+      value_address:
+        "Армавир, ул. Шаумяна, 145",
+
+      label_phone:
+        "Телефон",
+
+      label_email:
+        "Email",
+
+      label_hours:
+        "Часы работы",
+
+      value_hours:
+        "Пн–Сб · 09:00–19:00",
+
+
+      form_name_label:
+        "Имя и фамилия",
+
+      form_name_placeholder:
+        "Введите имя и фамилию",
+
+      form_phone_label:
+        "Телефон",
+
+      form_service_label:
+        "Необходимая услуга",
+
+      form_service_placeholder:
+        "Выберите услугу",
+
+      form_date_label:
+        "Желаемая дата",
+
+      form_notes_label:
+        "Дополнительная информация (необязательно)",
+
+      form_notes_placeholder:
+        "Укажите всё, что нам стоит знать перед вашим визитом",
+
+      form_submit:
+        "Отправить заявку",
+
+      form_success:
+        "✓ Заявка успешно отправлена. Мы скоро свяжемся с вами.",
+
+      form_error:
+        "Не удалось отправить заявку. Позвоните нам или попробуйте ещё раз.",
+
+      footer_copy:
+        "© 2026 Стоматологическая клиника Tovmasyan. Все права защищены."
+
+    },
+
+
+    /* ================= ENGLISH ================= */
+
+    en: {
+
+      skip_link: "Skip to main content",
+
+      nav_services: "Services",
+      nav_gallery: "The clinic",
+      nav_patients: "Reviews",
+      nav_contact: "Contact",
+      nav_cta: "Book a visit",
+
+      mobile_menu_open: "Open menu",
+      mobile_menu_close: "Close menu",
+
+      hero_eyebrow:
+        "Armavir · Private dental clinic",
+
+      hero_h1:
+        "Modern dentistry<br>with a thoughtful, individual<br><em>approach</em>",
+
+      hero_lede:
+        "At Tovmasyan Dental Clinic, we combine modern technology, clinical precision, and individual attention to make every visit comfortable, clear, and carefully considered.",
+
+      hero_cta_primary:
+        "Book a visit",
+
+      hero_cta_ghost:
+        "View services",
+
+      molar_label_pulp:
+        "Pulp chamber",
+
+      molar_label_root:
+        "Root canal",
+
+
+      services_eyebrow:
+        "Our services",
+
+      services_h2:
+        "Comprehensive dental care<br>in one trusted place.",
+
+      services_p:
+        "We focus on the treatments we can deliver to a consistently high standard, with a plan tailored to each patient.",
+
+      svc1_title:
+        "Preventive care & hygiene",
+
+      svc1_desc:
+        "Routine examinations, professional cleaning, and early diagnosis to help maintain healthy teeth and gums.",
+
+      svc2_title:
+        "Restorative dentistry",
+
+      svc2_desc:
+        "Cavity treatment, tooth restoration, crowns, and root canal therapy with an emphasis on preserving natural tooth structure.",
+
+      svc3_title:
+        "Cosmetic dentistry",
+
+      svc3_desc:
+        "Whitening, veneers, and aesthetic solutions designed to create a natural, balanced smile.",
+
+      svc4_title:
+        "Dental implants",
+
+      svc4_desc:
+        "Individual implant planning and treatment, from the initial consultation through to the final restoration.",
+
+      svc5_title:
+        "Orthodontics",
+
+      svc5_desc:
+        "Clear aligners and traditional braces to improve tooth alignment and create a healthy, balanced smile.",
+
+      svc6_title:
+        "Emergency dental care",
+
+      svc6_desc:
+        "For severe pain, injury, chips, or broken teeth, we aim to arrange a prompt appointment and provide the care you need.",
+
+
+      gallery_eyebrow:
+        "Our clinic",
+
+      gallery_h2:
+        "A comfortable environment<br>for thoughtful care.",
+
+      gallery_p:
+        "Take a look at our clinic, treatment rooms, and working environment.",
+
+      gallery_tile1:
+        "Treatment room",
+
+      gallery_tile2:
+        "Reception",
+
+      gallery_tile3:
+        "Treatment result",
+
+      gallery_tile4:
+        "Sterilization room",
+
+
+      testi_eyebrow:
+        "Patient reviews",
+
+      testi_h2:
+        "What our patients say.",
+
+      testi_p:
+        "Our patients’ trust is the most meaningful measure of our work.",
+
+      testi1_quote:
+        "“Everything was explained clearly before treatment, which made the whole visit feel calm and reassuring.”",
+
+      testi1_role:
+        "Patient review",
+
+      testi2_quote:
+        "“The treatment was smooth and carefully done. The result looks natural, and every detail was handled thoughtfully.”",
+
+      testi2_role:
+        "Patient review",
+
+      testi3_quote:
+        "“I was able to arrange an urgent appointment quickly and receive the help I needed the same day.”",
+
+      testi3_role:
+        "Patient review",
+
+
+      booking_eyebrow:
+        "Book a visit",
+
+      booking_h2:
+        "The next step<br>toward a healthier smile.",
+
+      booking_p:
+        "Complete the short form and tell us your preferred date. We’ll contact you to confirm your visit.",
+
+      booking_info_h3:
+        "Clinic details",
+
+      label_address:
+        "Address",
+
+      value_address:
+        "Armavir, Shahumyan 145",
+
+      label_phone:
+        "Phone",
+
+      label_email:
+        "Email",
+
+      label_hours:
+        "Hours",
+
+      value_hours:
+        "Mon–Sat · 09:00–19:00",
+
+
+      form_name_label:
+        "Full name",
+
+      form_name_placeholder:
+        "Enter your first and last name",
+
+      form_phone_label:
+        "Phone",
+
+      form_service_label:
+        "Service needed",
+
+      form_service_placeholder:
+        "Select a service",
+
+      form_date_label:
+        "Preferred date",
+
+      form_notes_label:
+        "Additional information (optional)",
+
+      form_notes_placeholder:
+        "Anything we should know before your visit",
+
+      form_submit:
+        "Send request",
+
+      form_success:
+        "✓ Your request has been sent. We’ll be in touch shortly.",
+
+      form_error:
+        "We couldn’t send your request. Please call us or try again.",
+
+      footer_copy:
+        "© 2026 Tovmasyan Dental Clinic. All rights reserved."
+
+    }
+
+  };
+
+
+  /* ---------- Language ---------- */
 
   function setLanguage(lang) {
+
     const dict = translations[lang];
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (dict[key] !== undefined) el.textContent = dict[key];
-    });
-    document.querySelectorAll('[data-i18n-html]').forEach(el => {
-      const key = el.getAttribute('data-i18n-html');
-      if (dict[key] !== undefined) el.innerHTML = dict[key];
-    });
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-      const key = el.getAttribute('data-i18n-placeholder');
-      if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
-    });
-    document.querySelectorAll('.lang-switch button').forEach(btn => {
-      const active = btn.getAttribute('data-lang') === lang;
-      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-    });
-    document.getElementById('html-root').setAttribute('lang', lang === 'hy' ? 'hy' : lang);
+
+    if (!dict) return;
+
+
+    document
+      .querySelectorAll('[data-i18n]')
+      .forEach(el => {
+
+        const key = el.getAttribute('data-i18n');
+
+        if (dict[key] !== undefined) {
+          el.textContent = dict[key];
+        }
+
+      });
+
+
+    document
+      .querySelectorAll('[data-i18n-html]')
+      .forEach(el => {
+
+        const key = el.getAttribute('data-i18n-html');
+
+        if (dict[key] !== undefined) {
+          el.innerHTML = dict[key];
+        }
+
+      });
+
+
+    document
+      .querySelectorAll('[data-i18n-placeholder]')
+      .forEach(el => {
+
+        const key = el.getAttribute('data-i18n-placeholder');
+
+        if (dict[key] !== undefined) {
+          el.setAttribute('placeholder', dict[key]);
+        }
+
+      });
+
+
+    document
+      .querySelectorAll('.lang-switch button')
+      .forEach(btn => {
+
+        const active =
+          btn.getAttribute('data-lang') === lang;
+
+        btn.setAttribute(
+          'aria-pressed',
+          active ? 'true' : 'false'
+        );
+
+      });
+
+
+    document
+      .getElementById('html-root')
+      .setAttribute(
+        'lang',
+        lang
+      );
+
+
+    const menuOpen =
+      menuToggle.getAttribute('aria-expanded') === 'true';
+
+    menuToggle.setAttribute(
+      'aria-label',
+      menuOpen
+        ? dict.mobile_menu_close
+        : dict.mobile_menu_open
+    );
+
+
+    document.title = {
+
+      hy: "Tovmasyan Dental Clinic — Արմավիր",
+      ru: "Tovmasyan Dental Clinic — Армавир",
+      en: "Tovmasyan Dental Clinic — Armavir"
+
+    }[lang];
+
+
+    localStorage.setItem(
+      'tovmasyan-language',
+      lang
+    );
+
   }
 
-  // Mobile menu toggle
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuToggle.addEventListener('click', () => {
-    const open = mobileMenu.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
-  mobileMenu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Open menu');
+
+  /* ---------- Mobile menu ---------- */
+
+  const menuToggle =
+    document.getElementById('menu-toggle');
+
+  const mobileMenu =
+    document.getElementById('mobile-menu');
+
+
+  menuToggle.addEventListener(
+    'click',
+    () => {
+
+      const open =
+        mobileMenu.classList.toggle('open');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        open ? 'true' : 'false'
+      );
+
+      const lang =
+        document.getElementById('html-root').lang;
+
+      const dict =
+        translations[lang];
+
+      menuToggle.setAttribute(
+        'aria-label',
+        open
+          ? dict.mobile_menu_close
+          : dict.mobile_menu_open
+      );
+
+    }
+  );
+
+
+  mobileMenu
+    .querySelectorAll('a')
+    .forEach(a => {
+
+      a.addEventListener(
+        'click',
+        () => {
+
+          mobileMenu.classList.remove('open');
+
+          menuToggle.setAttribute(
+            'aria-expanded',
+            'false'
+          );
+
+          const lang =
+            document.getElementById('html-root').lang;
+
+          menuToggle.setAttribute(
+            'aria-label',
+            translations[lang].mobile_menu_open
+          );
+
+        }
+      );
+
     });
-  });
 
-  // Don't let people pick a date in the past
-  document.getElementById('date').min = new Date().toISOString().split('T')[0];
 
-  // Scroll reveal
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => io.observe(el));
+  /* ---------- Date ---------- */
 
-  // ---------- Booking form -> Google Apps Script ----------
-  // Replace with YOUR deployed Web App URL (Deploy > Manage deployments > New version).
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxLXwpZQZDwJG3mVw53Ro08MBu0Kw1fVjvngrfVJAmkTrQIIgWTt0qe7b37LeI90R5lRw/exec";
+  const dateInput =
+    document.getElementById('date');
 
-  const bookingForm = document.getElementById('booking-form');
-  bookingForm.addEventListener('submit', handleBookingSubmit);
+  dateInput.min =
+    new Date().toISOString().split('T')[0];
+
+
+  /* ---------- Scroll reveal ---------- */
+
+  const revealEls =
+    document.querySelectorAll('.reveal');
+
+
+  const io =
+    new IntersectionObserver(
+      entries => {
+
+        entries.forEach(e => {
+
+          if (e.isIntersecting) {
+
+            e.target.classList.add('in');
+
+            io.unobserve(e.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+
+  revealEls.forEach(
+    el => io.observe(el)
+  );
+
+
+  /* ---------- Booking form ---------- */
+
+  const SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbxLXwpZQZDwJG3mVw53Ro08MBu0Kw1fVjvngrfVJAmkTrQIIgWTt0qe7b37LeI90R5lRw/exec";
+
+
+  const bookingForm =
+    document.getElementById('booking-form');
+
+
+  bookingForm.addEventListener(
+    'submit',
+    handleBookingSubmit
+  );
+
 
   async function handleBookingSubmit(e) {
+
     e.preventDefault();
 
     const form = e.target;
 
+
     if (!form.checkValidity()) {
+
       form.reportValidity();
+
       return;
+
     }
 
-    // Honeypot: if this hidden field got filled in, silently drop the submission
+
+    /* Honeypot */
+
     if (form.company.value) {
       return;
     }
 
-    const submitBtn = document.getElementById('form-submit-btn');
-    const successEl = document.getElementById('form-success');
-    const errorEl = document.getElementById('form-error');
+
+    const submitBtn =
+      document.getElementById('form-submit-btn');
+
+    const successEl =
+      document.getElementById('form-success');
+
+    const errorEl =
+      document.getElementById('form-error');
+
 
     successEl.classList.remove('show');
     errorEl.classList.remove('show');
 
+
     const data = {
-      name: form.name.value,
-      phone: form.phone.value,
+
+      name: form.name.value.trim(),
+
+      phone: form.phone.value.trim(),
+
       service: form.service.value,
+
       date: form.date.value,
-      notes: form.notes.value
+
+      notes: form.notes.value.trim()
+
     };
 
+
     submitBtn.disabled = true;
+
     submitBtn.classList.add('loading');
 
+
     try {
-      // Apps Script Web Apps don't send CORS headers back, so a normal fetch()
-      // gets blocked by the browser before it can read the response. "no-cors"
-      // lets the request go through — we just can't read anything back from it.
-      await fetch(SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "text/plain;charset=utf-8" }, // avoids a CORS preflight
-        body: JSON.stringify(data)
-      });
+
+      await fetch(
+        SCRIPT_URL,
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type":
+              "text/plain;charset=utf-8"
+          },
+          body: JSON.stringify(data)
+        }
+      );
+
 
       successEl.classList.add('show');
+
       form.reset();
+
+
     } catch (error) {
+
       console.error(error);
+
       errorEl.classList.add('show');
+
+
     } finally {
+
       submitBtn.disabled = false;
+
       submitBtn.classList.remove('loading');
+
     }
+
   }
+
+
+  /* ---------- Initial language ---------- */
+
+  const savedLanguage =
+    localStorage.getItem(
+      'tovmasyan-language'
+    );
+
+
+  setLanguage(
+    savedLanguage &&
+    translations[savedLanguage]
+      ? savedLanguage
+      : 'hy'
+  );
+
 </script>
 
 </body>
