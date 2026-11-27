@@ -1,5 +1,4 @@
 const MAIL_ENDPOINT = "https://formsubmit.co/ajax/tovmasyannarek008@gmail.com";
-
 const bookingForm = document.getElementById('booking-form');
 bookingForm.addEventListener('submit', handleBookingSubmit);
 
