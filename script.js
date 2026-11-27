@@ -1,44 +1,47 @@
-const GOOGLE_SCRIPT_URL =
-  "https://docs.google.com/spreadsheets/d/15Iz9L3geZARRHO24UMhRHZIaF1LHfY4lmq4oHQZI4RA/edit?gid=0#gid=0";
+const MAIL_ENDPOINT = "https://formsubmit.co/ajax/tovmasyannarek008@gmail.com";
+
+const bookingForm = document.getElementById('booking-form');
+bookingForm.addEventListener('submit', handleBookingSubmit);
 
 async function handleBookingSubmit(e) {
   e.preventDefault();
-
   const form = e.target;
-  const button = form.querySelector(".form-submit");
-  const success = document.getElementById("form-success");
 
-  const data = {
-    name: document.getElementById("name").value.trim(),
-    phone: document.getElementById("phone").value.trim(),
-    service: document.getElementById("service").value,
-    date: document.getElementById("date").value,
-    notes: document.getElementById("notes").value.trim()
-  };
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  if (form.company.value) return; // spam trap
 
-  button.disabled = true;
-  button.textContent = "Sending...";
+  const btn = document.getElementById('form-submit-btn');
+  const success = document.getElementById('form-success');
+  const error = document.getElementById('form-error');
+  success.classList.remove('show');
+  error.classList.remove('show');
+
+  btn.disabled = true;
+  btn.classList.add('loading');
 
   try {
-    await fetch(GOOGLE_SCRIPT_URL, {
-      method: "POST",
-      mode: "no-cors",
-      headers: {
-        "Content-Type": "text/plain;charset=utf-8"
-      },
-      body: JSON.stringify(data)
+    const res = await fetch(MAIL_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: 'Նոր հայտ՝ ' + form.name.value.trim(),
+        _template: 'table',
+        _captcha: 'false',
+        Անուն: form.name.value.trim(),
+        Հեռախոս: form.phone.value.trim(),
+        Ծառայություն: form.service.selectedOptions[0].textContent.trim(),
+        Ամսաթիվ: form.date.value,
+        Նշումներ: form.notes.value.trim()
+      })
     });
-
-    success.classList.add("show");
+    if (!res.ok) throw new Error('Request failed');
+    success.classList.add('show');
     form.reset();
-
-  } catch (error) {
-    console.error("Booking error:", error);
-    alert("Something went wrong. Please try again.");
+  } catch (err) {
+    console.error(err);
+    error.classList.add('show');
+  } finally {
+    btn.disabled = false;
+    btn.classList.remove('loading');
   }
-
-  button.disabled = false;
-  button.textContent = "Request appointment";
-
-  return false;
 }
