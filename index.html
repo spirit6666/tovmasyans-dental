@@ -8,6 +8,9 @@
 
 <meta name="description" content="Թովմասյան ատամնաբուժական կլինիկա՝ Արմավիրում։ Ժամանակակից ստոմատոլոգիա, կանխարգելիչ և վերականգնողական բուժում, իմպլանտացիա, օրթոդոնտիա և էսթետիկ ստոմատոլոգիա։">
 
+<meta name="theme-color" content="#0D3B34">
+<meta property="og:title" content="Tovmasyan Dental Clinic — Armavir">
+<meta property="og:image" content="clinic1.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230E3B36' d='M12 3c-3 0-5 2-5 5.5 0 3 1.2 5 1.6 8 .2 1.6 1 2.5 1.9 2.5s1.3-1 1.5-2.3c.2-1.4.5-2.2 1-2.2s.8.8 1 2.2c.2 1.3.6 2.3 1.5 2.3s1.7-.9 1.9-2.5c.4-3 1.6-5 1.6-8C17 5 15 3 12 3Z'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -540,54 +543,53 @@
 
   /* ---------- Gallery ---------- */
 
-  .gallery-section {
-    background: var(--porcelain-dim);
-  }
+  .gallery-section { background: var(--porcelain-dim); }
 
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
-  @media (max-width: 900px) {
-    .gallery-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  @media (max-width: 700px) {
+    .gallery-grid { grid-template-columns: 1fr; }
   }
 
   .gallery-tile {
-    aspect-ratio: 4/5;
-    border-radius: 4px;
-    background: linear-gradient(160deg, var(--teal-deep), var(--teal-mid));
     position: relative;
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
     overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    padding: 18px;
+    background: var(--teal-deep);
   }
 
-  .gallery-tile:nth-child(2n) {
-    background: linear-gradient(160deg, #1E463F, #0D3B34);
+  .gallery-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
   }
 
-  .gallery-tile span {
-    color: rgba(250,247,242,0.72);
-    font-family: var(--font-mono);
-    font-size: 11.5px;
-    letter-spacing: 0.05em;
-  }
+  .gallery-tile:hover img { transform: scale(1.04); }
 
-  .gallery-tile::before {
+  .gallery-tile::after {
     content: '';
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(
-        circle at 30% 20%,
-        rgba(215,178,108,0.18),
-        transparent 60%
-      );
+    background: linear-gradient(to top, rgba(13,59,52,0.78), transparent 50%);
+    pointer-events: none;
+  }
+
+  .gallery-tile figcaption {
+    position: absolute;
+    left: 22px;
+    bottom: 18px;
+    z-index: 1;
+    color: var(--porcelain);
+    font-family: var(--font-display);
+    font-size: 18px;
   }
 
   /* ---------- Testimonials ---------- */
@@ -881,6 +883,57 @@
       transition: none;
     }
   }
+
+  /* ---------- Polish ---------- */
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(60% 80% at 85% 20%, rgba(215,178,108,0.10), transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 1; }
+
+  .molar-svg { width: min(300px, 80vw); height: auto; }
+
+  .field input[type="date"] { color-scheme: dark; }
+  .field select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--gold-bright) 50%), linear-gradient(135deg, var(--gold-bright) 50%, transparent 50%); background-position: calc(100% - 20px) 55%, calc(100% - 14px) 55%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 36px; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--gold-bright); outline: none; box-shadow: 0 0 0 3px rgba(215,178,108,0.25); }
+
+  .service-card h3 { font-size: 20px; }
+  .service-card .icon { width: 36px; height: 36px; }
+
+  footer { max-width: 1180px; margin: 0 auto; }
+
+  .call-fab {
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    z-index: 60;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--gold);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(13,59,52,0.35);
+  }
+  .call-fab svg { width: 22px; height: 22px; }
+  .call-fab svg path { stroke: var(--teal-deep); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+  @media (max-width: 700px) {
+    .call-fab { display: flex; }
+    section { padding: 64px 20px; }
+    .hero { padding: 64px 20px 56px; }
+    .nav-inner { padding: 12px 16px; gap: 10px; }
+    .nav-cta { display: none; }
+    .brand { font-size: 17px; }
+    .wrap { padding: 0; }
+    form#booking-form { padding: 22px; }
+    .info-row { flex-direction: column; gap: 4px; }
+  }
 </style>
 </head>
 
@@ -988,8 +1041,7 @@
       </span>
 
       <h1 data-i18n-html="hero_h1">
-        Ժամանակակից ստոմատոլոգիա<br>
-       ՝ հոգատար և անհատական<br>
+        Ժամանակակից ստոմատոլոգիա՝<br>հոգատար և անհատական<br>
         <em>մոտեցմամբ</em>
       </h1>
 
@@ -1087,8 +1139,7 @@
       </span>
 
       <h2 data-i18n-html="services_h2">
-        Ատամնաբուժական ծառայություններ<br>
-       ՝ մեկ վստահելի վայրում։
+        Ատամնաբուժական ծառայություններ՝<br>մեկ վստահելի վայրում։
       </h2>
 
       <p data-i18n="services_p">
@@ -1257,41 +1308,25 @@
 
     <div class="section-head reveal">
 
-      <span class="eyebrow" data-i18n="gallery_eyebrow">
-        Մեր կլինիկան
-      </span>
+      <span class="eyebrow" data-i18n="gallery_eyebrow">Մեր կլինիկան</span>
 
-      <h2 data-i18n-html="gallery_h2">
-        Հարմարավետ միջավայր՝<br>
-        որակյալ բուժման համար։
-      </h2>
+      <h2 data-i18n-html="gallery_h2">Հարմարավետ միջավայր՝<br>որակյալ բուժման համար։</h2>
 
-      <p data-i18n="gallery_p">
-        Ծանոթացեք մեր կլինիկայի միջավայրին, բուժասենյակներին և աշխատանքային գործընթացին։
-      </p>
+      <p data-i18n="gallery_p">Ծանոթացեք մեր կլինիկայի միջավայրին, բուժասենյակներին և աշխատանքային գործընթացին։</p>
 
     </div>
 
-      <div class="gallery-tile has-photo reveal"
-           style="background-image: url('clinic1.jpg');">
-        <span data-i18n="gallery_tile1">Բուժասենյակ</span>
-      </div>
-      
-      <div class="gallery-tile has-photo reveal"
-           style="background-image: url('clinic2.jpg');">
-        <span data-i18n="gallery_tile2">Ընդունարան</span>
-      </div>
-      <div class="gallery-tile reveal">
-        <span data-i18n="gallery_tile3">
-          Բուժման արդյունք
-        </span>
-      </div>
+    <div class="gallery-grid">
 
-      <div class="gallery-tile reveal">
-        <span data-i18n="gallery_tile4">
-          Ստերիլիզացիայի սենյակ
-        </span>
-      </div>
+      <figure class="gallery-tile reveal">
+        <img src="clinic1.jpg" alt="Tovmasyan Dental Clinic" loading="lazy" decoding="async">
+        <figcaption data-i18n="gallery_tile1">Բուժասենյակ</figcaption>
+      </figure>
+
+      <figure class="gallery-tile reveal">
+        <img src="clinic2.jpg" alt="Tovmasyan Dental Clinic" loading="lazy" decoding="async">
+        <figcaption data-i18n="gallery_tile2">Ընդունարան</figcaption>
+      </figure>
 
     </div>
 
@@ -1672,6 +1707,10 @@
 </footer>
 
 
+<a href="tel:+37477033012" class="call-fab" aria-label="Call +374 77 033012">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></svg>
+</a>
+
 <script>
 
   const translations = {
@@ -1695,7 +1734,7 @@
         "Արմավիր · Մասնավոր ատամնաբուժական կլինիկա",
 
       hero_h1:
-        "Ժամանակակից ստոմատոլոգիա<br>՝ հոգատար և անհատական<br><em>մոտեցմամբ</em>",
+        "Ժամանակակից ստոմատոլոգիա՝<br>հոգատար և անհատական<br><em>մոտեցմամբ</em>",
 
       hero_lede:
         "Թովմասյան ատամնաբուժական կլինիկայում համադրում ենք ժամանակակից տեխնոլոգիաները, բժշկական ճշգրտությունն ու անհատական մոտեցումը՝ ապահովելու հարմարավետ, վստահելի և բարձրորակ բուժում։",
@@ -1717,10 +1756,10 @@
         "Մեր ծառայությունները",
 
       services_h2:
-        "Ատամնաբուժական ծառայություններ<br>՝ մեկ վստահելի վայրում։",
+        "Ատամնաբուժական ծառայություններ՝<br>մեկ վստահելի վայրում։",
 
       services_p:
-        "Մենք կենտրոնանում ենք այն բուժումների վրա, որոնք իրականացնում ենք բարձր որակով՝ յուրաքանչյուր հիվանդի կարիքներին համապատասխան անհատական պլանավորմամբ.",
+        "Մենք կենտրոնանում ենք այն բուժումների վրա, որոնք իրականացնում ենք բարձր որակով՝ յուրաքանչյուր հիվանդի կարիքներին համապատասխան անհատական պլանավորմամբ։",
 
       svc1_title:
         "Կանխարգելում և հիգիենա",
@@ -2378,10 +2417,7 @@
     }[lang];
 
 
-    localStorage.setItem(
-      'tovmasyan-language',
-      lang
-    );
+    try { localStorage.setItem('tovmasyan-language', lang); } catch (e) {}
 
   }
 
@@ -2610,10 +2646,8 @@
 
   /* ---------- Initial language ---------- */
 
-  const savedLanguage =
-    localStorage.getItem(
-      'tovmasyan-language'
-    );
+  let savedLanguage = null;
+  try { savedLanguage = localStorage.getItem('tovmasyan-language'); } catch (e) {}
 
 
   setLanguage(
